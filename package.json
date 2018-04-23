@@ -1,0 +1,82 @@
+{
+  "name": "@antongolub/common-middlewares",
+  "version": "0.0.0",
+  "description": "Commmon express middlewares",
+  "main": "dist/index.js",
+  "scripts": {
+    "jest": "jest -w 1",
+    "lint": "standard-flow src/**/*.js test/**/*.js",
+    "flow": "flow",
+    "test": "npm run lint && npm run flow && npm run jest",
+    "flow_coverage": "flow-coverage-report -i 'src/**/*.js' -t html -t json -t text --threshold 90",
+    "build": "BABEL_ENV=production babel src --out-dir dist",
+    "test_with_push": "npm test && npm run codeclimate_push && npm run coveralls_push",
+    "codeclimate_push": "codeclimate-test-reporter < ./coverage/lcov.info",
+    "coveralls_push": "cat ./coverage/lcov.info | coveralls",
+    "minor": "npm test && npm run build && standard-version --release-as minor && npm run postversion",
+    "major": "npm test && npm run build && standard-version --release-as major && npm run postversion",
+    "release": "npm test && npm run build && standard-version && npm run postversion",
+    "postversion": "npm run push && npm publish",
+    "push": "git push --follow-tags origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antongolub/common-middlewares.git"
+  },
+  "keywords": [
+    "common middlewares",
+    "logger middleware",
+    "mdc",
+    "traceur"
+  ],
+  "author": "Anton Golub <a.golub@qiwi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.44",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.44",
+    "@babel/polyfill": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-flow": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-minify": "^0.4.0",
+    "codeclimate-test-reporter": "^0.5.0",
+    "coveralls": "^3.0.0",
+    "flow-bin": "^0.70.0",
+    "flow-coverage-report": "^0.5.0",
+    "flow-remove-types": "^1.2.3",
+    "jest": "^23.0.0-alpha.4",
+    "lodash": "^4.17.5",
+    "standard-flow": "^1.0.0",
+    "standard-version": "^4.3.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  },
+  "standard-flow": {
+    "parser": "babel-eslint",
+    "globals": [
+      "it",
+      "expect",
+      "describe"
+    ],
+    "ignore": [],
+    "plugins": [
+      "flowtype"
+    ],
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      }
+    }
+  },
+  "dependencies": {}
+}

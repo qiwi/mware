@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '9'
+install:
+  - npm install
+  - npm build
+script:
+  - npm run test_with_push
