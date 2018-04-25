@@ -49,6 +49,7 @@
     "flow-remove-types": "^1.2.3",
     "jest": "^23.0.0-alpha.4",
     "lodash": "^4.17.5",
+    "reqresnext": "^1.4.0",
     "standard-flow": "^1.0.0",
     "standard-version": "^4.3.0"
   },
