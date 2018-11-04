@@ -6,6 +6,11 @@
     "packages/*"
   ],
   "main": "dist/index.js",
+  "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "dist/"
+  ],
   "scripts": {
     "build_es6": "flow-remove-types src/ --out-dir dist/es6/",
     "build_es5": "BABEL_ENV=production babel src --out-dir dist/es5/",
