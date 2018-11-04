@@ -1,4 +1,4 @@
-import {loggerMiddlewareFactory} from '../../src/middleware'
+import { loggerMiddlewareFactory } from '../../src/middleware'
 
 describe('middleware/index', () => {
   it('exposes factory', () => {

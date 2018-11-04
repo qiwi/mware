@@ -2,8 +2,8 @@
 ./src/
 
 [ignore]
-./dist/
-./node_modules/.*
+.*/dist/
+.*/node_modules/config-chain/test/
 
 [libs]
 ./definitions/

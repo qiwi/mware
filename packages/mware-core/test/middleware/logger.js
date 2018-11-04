@@ -1,4 +1,4 @@
-import {loggerMiddlewareFactory} from '../../src/middleware'
+import { loggerMiddlewareFactory } from '../../src/middleware'
 
 describe('middleware/logger', () => {
   describe('factory', () => {
@@ -6,7 +6,7 @@ describe('middleware/logger', () => {
       const logger = {
         info: () => {}
       }
-      const mware = loggerMiddlewareFactory({logger})
+      const mware = loggerMiddlewareFactory({ logger })
 
       expect(mware).toBeDefined()
     })
