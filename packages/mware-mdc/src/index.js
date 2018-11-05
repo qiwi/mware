@@ -13,6 +13,6 @@ export default (() => {
   const mdc = new Mdc({})
 
   return ((req: IRequest, res: IResponse, next: INext) => {
-    mdc.contextify(req, res, (req, res, next) => mdc.trace(req, res, next))
+    mdc.contextify(req, res, mdc.trace.bind(mdc))
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
