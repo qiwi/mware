@@ -6,4 +6,4 @@
 .*/node_modules/config-chain/test/
 
 [libs]
-./definitions/
+./flow-typed/
