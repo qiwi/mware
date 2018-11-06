@@ -5,8 +5,6 @@ import {createNamespace, getNamespace} from 'continuation-local-storage'
 import type {INamespace} from 'continuation-local-storage'
 import type {
   IAny,
-  IMiddlewareFactory,
-  IRegularMiddleware,
   IRequest,
   IResponse,
   INext

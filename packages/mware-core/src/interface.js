@@ -2,11 +2,13 @@
 
 export type IAny = any
 
-export interface ILogger {
-  debug: (...args: IAny[]) => void,
-  info: (...args: IAny[]) => void,
-  warn: (...args: IAny[]) => void,
-  error: (...args: IAny[]) => void
+export type ILogMethod = (...args: IAny[]) => void
+export type ILogger = {
+  [string]: ILogMethod,
+  debug: ILogMethod,
+  info: ILogMethod,
+  warn: ILogMethod,
+  error: ILogMethod
 }
 
 export type IRequest = IAny
