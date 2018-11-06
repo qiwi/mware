@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "description": "Commmon middlewares core",
-  "main": "dist/index.js",
+  "main": "dist/es5/index.js",
   "files": [
     "README.md",
     "CHANGELOG.md",
