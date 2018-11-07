@@ -8,9 +8,10 @@ npm i @qiwi/mware
 ```
 
 ### Middlewares
-* [mware-mdc](../mware-mdc/README.md)
-* [mware-logger](../mware-logger/README.md)
-* [mware-crumbs](../mware-crumbs/README.md)
+* [mware-mdc](./packages/mware-mdc/README.md)
+* [mware-logger](./packages/mware-logger/README.md)
+* [mware-crumbs](./packages/mware-crumbs/README.md)
+* [mware-cors](./packages/mware-cors/README.md)
 
 ### Usage
 ```javascript
