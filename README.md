@@ -10,9 +10,9 @@ npm i @qiwi/mware
 ### Middlewares
 * [mware-mdc](../mware-mdc/README.md)
 * [mware-logger](../mware-logger/README.md)
+* [mware-crumbs](../mware-crumbs/README.md)
 
 ### Usage
-
 ```javascript
 import {cors, mdc} from '@qiwi/mware'
 import express from 'express'
