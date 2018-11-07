@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-cors",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "private": false,
   "description": "CORS middleware",
   "main": "dist/es5/index.js",
