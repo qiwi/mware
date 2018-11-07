@@ -15,5 +15,7 @@ export {
 export default {
   mdc,
   logger,
+  cors,
+  crumbs,
   util
 }
