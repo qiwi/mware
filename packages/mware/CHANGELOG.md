@@ -1,3 +1,10 @@
+# [@qiwi/mware-v1.4.1](https://github.com/qiwi/mware/compare/v1.4.0...v1.4.1) (2018-11-07)
+
+
+### Bug Fixes
+
+* **facade:** correct broken deps ([a91d1af](https://github.com/qiwi/mware/commit/a91d1af))
+
 # [@qiwi/mware-v1.4.0](https://github.com/qiwi/mware/compare/v1.3.0...v1.4.0) (2018-11-07)
 
 
