@@ -1,3 +1,10 @@
+# [@qiwi/mware-mdc-v1.5.0](https://github.com/qiwi/mware/compare/v1.4.2...v1.5.0) (2018-11-08)
+
+
+### Features
+
+* **mdc:** attach trace field to request ([9bae686](https://github.com/qiwi/mware/commit/9bae686))
+
 # [@qiwi/mware-mdc-v1.4.2](https://github.com/qiwi/mware/compare/v1.4.1...v1.4.2) (2018-11-08)
 
 
