@@ -22,4 +22,18 @@ describe('mware-mdc', () => {
     expect(res.get('x-b3-parentspanid')).toBeUndefined()
     expect(next).toHaveBeenCalled()
   })
+
+  it('attaches req.trace field', () => {
+    const mware = factory({})
+    const {req, res} = reqresnext(null, null)
+
+    mware(req, res, () => {
+      expect(req.trace).toMatchObject({
+        trace_id: expect.stringMatching(/^[0-9a-f]{16}$/),
+        span_id: expect.stringMatching(/^[0-9a-f]{16}$/),
+      })
+    })
+
+    expect(req.trace).toBeUndefined()
+  })
 })
