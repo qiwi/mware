@@ -1,3 +1,10 @@
+# [@qiwi/mware-mdc-v1.4.2](https://github.com/qiwi/mware/compare/v1.4.1...v1.4.2) (2018-11-08)
+
+
+### Bug Fixes
+
+* **mdc:** repair broken composition ([0e6f0bc](https://github.com/qiwi/mware/commit/0e6f0bc))
+
 # [@qiwi/mware-mdc-v1.2.0](https://github.com/qiwi/mware/compare/v1.1.0...v1.2.0) (2018-11-06)
 
 
