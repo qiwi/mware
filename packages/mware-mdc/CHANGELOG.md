@@ -1,3 +1,10 @@
+# [@qiwi/mware-mdc-v1.5.1](https://github.com/qiwi/mware/compare/v1.5.0...v1.5.1) (2018-11-09)
+
+
+### Bug Fixes
+
+* **mdc:** pass context through async/await call stack ([877dcd0](https://github.com/qiwi/mware/commit/877dcd0)), closes [#2](https://github.com/qiwi/mware/issues/2)
+
 # [@qiwi/mware-mdc-v1.5.0](https://github.com/qiwi/mware/compare/v1.4.2...v1.5.0) (2018-11-08)
 
 
