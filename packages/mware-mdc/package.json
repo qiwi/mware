@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "continuation-local-storage": "^3.2.1"
+    "cls-hooked":"^4.2.2"
   },
   "devDependencies": {
     "lodash": "^4.17.11",

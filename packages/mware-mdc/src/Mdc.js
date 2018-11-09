@@ -1,8 +1,8 @@
 // @flow
 
 import crypto from 'crypto'
-import {createNamespace, getNamespace} from 'continuation-local-storage'
-import type {INamespace} from 'continuation-local-storage'
+import {createNamespace, getNamespace} from 'cls-hooked'
+import type {INamespace} from 'cls-hooked'
 import type {
   IAny,
   IRequest,
