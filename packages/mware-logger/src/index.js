@@ -105,7 +105,7 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
     res.on('finish', () => {
       const status = res.statusCode
       const level = getLogLevelByStatus(status)
-      const contentLength = (sent ? new Buffer('' + sent[0]) : Buffer.concat(chunks)).length
+      const contentLength = (sent ? Buffer.from('' + sent[0]) : Buffer.concat(chunks)).length
 
       sent = null
       chunks.length = 0
