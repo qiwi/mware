@@ -19,7 +19,8 @@ export type IErrorHandlerMiddleware = (err: IAny, req: IAny, res: IAny, next: Fu
 export type IMiddleware = IRegularMiddleware | IErrorHandlerMiddleware
 
 export type IMiddlewareOpts = {
-  logger?: ILogger
+  logger?: ILogger,
+  [key: string]: IAny
 }
 
-export type IMiddlewareFactory = (?IMiddlewareOpts) => IMiddleware
+export type IMiddlewareFactory = (opts?: IMiddlewareOpts) => IMiddleware
