@@ -24,9 +24,23 @@ export const getLogLevelByStatus = (status: number): string => {
 }
 
 export const DEFAULT_LOGGER = console // TODO inherit from core
+export const REQUEST_TEMPLATE = 'REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip}'
+export const RESPONSE_TEMPLATE = 'RES ${id} < status=${status} duration=${duration}ms contentLength=${contentLength}'
 
-export default (opts => {
-  const log = opts && opts.logger || DEFAULT_LOGGER
+export function interpolate (params) {
+  const names = Object.keys(params)
+  const vals = Object.values(params)
+
+  return new Function(...names, `return \`${this}\`;`)(...vals)
+}
+export const log = (logger, level, template, data) => {
+  logger[level](interpolate.call(template, data))
+}
+
+export default ((opts = {}) => {
+  const logger = opts.logger || DEFAULT_LOGGER
+  const reqTemplate = opts.reqTemplate || REQUEST_TEMPLATE
+  const resTemplate = opts.resTemplate || RESPONSE_TEMPLATE
 
   return ((req: IRequest, res: IResponse, next: INext) => {
     const start = Date.now();
@@ -42,7 +56,21 @@ export default (opts => {
 
     req.id = res.id = id;
 
-    log.info(`REQ ${id} > method=${req.method} target=${target} origin=${origin} ip=${req.ip} headers=${JSON.stringify(req.headers)}`);
+    log(
+      logger,
+      'info',
+      reqTemplate,
+      {
+        id,
+        ip: req.ip,
+        target,
+        origin,
+        method: req.method,
+        headers: JSON.stringify(req.headers)
+      }
+    )
+
+    // log.info(`REQ ${id} > method=${req.method} target=${target} origin=${origin} ip=${req.ip} headers=${JSON.stringify(req.headers)}`);
 
     res.send = (...args) => {
       res.send = _send;
@@ -75,7 +103,20 @@ export default (opts => {
       sent = null;
       chunks.length = 0;
 
-      log[level](`RES ${res.id} < status=${status} duration=${Date.now() - start}ms headers=${JSON.stringify(res.header()._headers)} bufferLength=${contentLength}`);
+      log(
+        logger,
+        level,
+        resTemplate,
+        {
+          id,
+          status,
+          duration: Date.now() - start,
+          headers: JSON.stringify(res.header()._headers),
+          contentLength
+        }
+      )
+
+      // log[level](`RES ${res.id} < status=${status} duration=${Date.now() - start}ms headers=${JSON.stringify(res.header()._headers)} bufferLength=${contentLength}`);
     });
 
     next();
