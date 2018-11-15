@@ -12,6 +12,7 @@ npm i @qiwi/mware
 * [mware-logger](../mware-logger/README.md)
 * [mware-crumbs](../mware-crumbs/README.md)
 * [mware-cors](../mware-cors/README.md)
+* [mware-validator](../mware-validator/README.md)
 
 ### Usage
 

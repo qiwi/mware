@@ -19,6 +19,7 @@ npm i @qiwi/mware
 * [mware-logger](./packages/mware-logger/README.md)
 * [mware-crumbs](./packages/mware-crumbs/README.md)
 * [mware-cors](./packages/mware-cors/README.md)
+* [mware-validator](./packages/mware-validator/README.md)
 
 ### Usage
 ```javascript
