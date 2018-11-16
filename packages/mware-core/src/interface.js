@@ -1,6 +1,9 @@
 // @flow
 
 export type IAny = any
+export type IAnyObject = {
+  [key: string]: IAny
+}
 
 export type ILogMethod = (...args: IAny[]) => void
 export type ILogger = {
