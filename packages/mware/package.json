@@ -32,7 +32,8 @@
     "@qiwi/mware-mdc": "^1.0.0",
     "@qiwi/mware-logger": "^1.0.0",
     "@qiwi/mware-crumbs": "^1.0.0",
-    "@qiwi/mware-cors": "^1.0.0"
+    "@qiwi/mware-cors": "^1.0.0",
+    "@qiwi/mware-validator": "^1.0.0"
   },
   "devDependencies": {
     "lodash": "^4.17.11",
