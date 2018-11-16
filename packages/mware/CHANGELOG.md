@@ -1,3 +1,10 @@
+# [@qiwi/mware-v1.7.1](https://github.com/qiwi/mware/compare/v1.7.0...v1.7.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **facade:** broken dep mware-validator ([0e4233a](https://github.com/qiwi/mware/commit/0e4233a))
+
 # [@qiwi/mware-v1.7.0](https://github.com/qiwi/mware/compare/v1.6.0...v1.7.0) (2018-11-15)
 
 
