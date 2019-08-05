@@ -1,4 +1,5 @@
 import { util } from '../../src/'
+import 'babel-polyfill'
 import reqresnext from 'reqresnext'
 
 describe('mware-core/util', () => {

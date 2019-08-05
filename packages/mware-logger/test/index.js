@@ -27,7 +27,7 @@ describe('mware-logger', () => {
     it('with span_id', () => {
       const { req, res, next } = reqresnext(
         {
-          url: '/foo/bar',
+          url: 'http://example.com/foo/bar',
           method: 'GET',
           headers: {
             origin: 'example.com'
@@ -40,7 +40,7 @@ describe('mware-logger', () => {
 
       expect(req.id).toMatch(/^[0-9a-f]{16}$/)
       expect(req.id).toBe(res.id)
-      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=\/foo\/bar origin=example.com .+$/))
+      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+$/))
       expect(next).toHaveBeenCalled()
     })
 
