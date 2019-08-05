@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-core",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": false,
   "description": "Commmon middlewares core",
   "main": "dist/es5/index.js",
