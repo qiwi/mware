@@ -1,3 +1,15 @@
+# [@qiwi/mware-v1.8.1](https://github.com/qiwi/mware/compare/v1.8.0...v1.8.1) (2019-08-05)
+
+
+### Bug Fixes
+
+* **facade:** expose as ES5 ([9bc8692](https://github.com/qiwi/mware/commit/9bc8692))
+
+
+### Performance Improvements
+
+* **package:** up deps and repack ([d68f35b](https://github.com/qiwi/mware/commit/d68f35b))
+
 # [@qiwi/mware-v1.7.1](https://github.com/qiwi/mware/compare/v1.7.0...v1.7.1) (2018-11-16)
 
 
