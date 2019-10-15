@@ -30,8 +30,6 @@ const getAjv = (opts = {}) => {
     ajvStack[key] = new Ajv(opts)
   }
 
-  console.log('!!!', Object.keys(ajvStack))
-
   return ajvStack[key]
 }
 
