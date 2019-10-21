@@ -29,6 +29,6 @@
   "homepage": "https://github.com/qiwi/mware#readme",
   "devDependencies": {
     "lodash": "^4.17.15",
-    "reqresnext": "^1.6.1"
+    "reqresnext": "^1.6.2"
   }
 }
