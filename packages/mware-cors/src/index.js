@@ -10,6 +10,8 @@ import type {
   ILogger
 } from '../../mware-core/src/interface'
 
+import {omit} from 'lodash'
+
 export const ALLOW_ORIGIN = 'Access-Control-Allow-Origin'
 export const ALLOW_HEADERS = 'Access-Control-Allow-Headers'
 export const EXPOSE_HEADERS = 'Access-Control-Expose-Headers'
@@ -46,9 +48,9 @@ export type IOpts = {
 export default ((opts: ?IOpts) => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     const allowOrigin = formatOriginHeader(opts && opts[ALLOW_ORIGIN], req.get('origin'))
-    const corsHeaders = {
+    const corsHeaders: {[key: string]: string} = {
       ...DEFAULT_HEADERS,
-      ...opts,
+      ...omit(opts, 'logger'),
       [ALLOW_ORIGIN]: allowOrigin
     }
 
