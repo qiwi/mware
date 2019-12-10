@@ -9,6 +9,8 @@ import type {
   INext
 } from '../../mware-core/src/interface'
 
+export * from './Mdc'
+
 export default (() => {
   const mdc = new Mdc({})
 

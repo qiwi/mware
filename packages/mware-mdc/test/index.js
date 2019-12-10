@@ -1,8 +1,13 @@
-import factory from '../src'
+import factory, {DEFAULT_SPACE_ID, TRACE_KEY} from '../src'
 import reqresnext from 'reqresnext'
 
 describe('mware-mdc', () => {
-  beforeEach(() => {
+  it('index reexports Mdc inners', () => {
+    expect(DEFAULT_SPACE_ID).toBe('mdc')
+    expect(TRACE_KEY).toBe('trace')
+  })
+
+  afterEach(() => {
     jest.resetAllMocks()
   })
 
