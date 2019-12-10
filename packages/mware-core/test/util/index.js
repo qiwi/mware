@@ -13,6 +13,8 @@ describe('mware-core/util', () => {
     }
     const wrapped = util.asyncMiddleware(mware)
 
+    afterEach(next.mockReset)
+
     it('ignores `success` flow', async () => {
       jest.spyOn(res, 'send')
 
@@ -24,7 +26,7 @@ describe('mware-core/util', () => {
 
     it('raises `next` handler on error', async () => {
       req.throw = true
-      await expect(wrapped(req, res, next))
+      await wrapped(req, res, next)
 
       expect(next).toHaveBeenCalledWith(new Error('Some error'))
     })
