@@ -1,3 +1,10 @@
+# [@qiwi/mware-mdc-v1.9.0](https://github.com/qiwi/mware/compare/v1.8.1...v1.9.0) (2019-12-10)
+
+
+### Features
+
+* **mdc:** reexport Mdc module inners ([652a86c](https://github.com/qiwi/mware/commit/652a86c6902e29cf508458d807086542dad7d182))
+
 # [@qiwi/mware-mdc-v1.8.1](https://github.com/qiwi/mware/compare/v1.8.0...v1.8.1) (2019-08-05)
 
 
