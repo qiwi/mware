@@ -29,7 +29,7 @@
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
     "@qiwi/mware-core": "^1.8.1",
-    "@qiwi/mware-mdc": "^1.8.1",
+    "@qiwi/mware-mdc": "^1.9.0",
     "@qiwi/mware-logger": "^1.8.1",
     "@qiwi/mware-crumbs": "^1.8.1",
     "@qiwi/mware-cors": "^1.8.1",
