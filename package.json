@@ -62,7 +62,7 @@
     "jest": "^24.9.0",
     "lerna": "^3.19.0",
     "semantic-release": "15.13.31",
-    "semantic-release-monorepo": "6.1.1",
+    "semantic-release-monorepo": "7.0.0",
     "semantic-release-monorepo-hooks": "2.9.5",
     "semantic-release-plugin-decorators": "^2.0.0",
     "standard": "^14.3.1"
