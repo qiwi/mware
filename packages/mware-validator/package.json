@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "ajv": "^6.10.2",
+    "ajv": "^6.11.0",
     "http-status-codes": "^1.4.0"
   },
   "devDependencies": {
     "lodash": "^4.17.15",
-    "reqresnext": "^1.6.2"
+    "reqresnext": "^1.6.3"
   }
 }
