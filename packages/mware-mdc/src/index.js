@@ -1,6 +1,5 @@
 // @flow
 
-import Mdc from './Mdc'
 import type {
   IMiddlewareFactory,
   IRegularMiddleware,
@@ -8,16 +7,44 @@ import type {
   IResponse,
   INext
 } from '../../mware-core/src/interface'
+import crypto from 'crypto'
+import {setContextValue, getContext} from '@qiwi/mware-context'
 
-export * from './Mdc'
+export const TRACE_KEY = 'trace'
 
 export default (() => {
-  const mdc = new Mdc({})
-
   return ((req: IRequest, res: IResponse, next: INext) => {
-    mdc.contextify(req, res, () => {
-      mdc.trace(req, res, () => {})
+    if (req.trace) {
       next()
+    }
+
+    const spanId = crypto.randomBytes(8).toString('hex')
+    const traceId = req.get('X-B3-TraceId') || spanId
+    const parentSpanId = req.get('X-B3-SpanId')
+    const trace = {
+      trace_id: traceId,
+      span_id: spanId,
+      parent_span_id: parentSpanId || null
+    }
+
+    if (getContext().active) {
+      setContextValue(TRACE_KEY, trace)
+    }
+
+    Object.defineProperty(req, 'trace', {
+      get() {
+        return trace
+      },
+      set() {}
     })
+
+    res.set('X-B3-TraceId', traceId)
+    res.set('X-B3-SpanId', spanId)
+
+    if (parentSpanId) {
+      res.set('X-B3-ParentSpanId', parentSpanId)
+    }
+
+    next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)

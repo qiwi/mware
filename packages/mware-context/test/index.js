@@ -46,4 +46,27 @@ describe('mware-context', () => {
       expect(getContext()).toBe(DEFAULT_NS)
     })
   })
+
+  describe('mware', () => {
+    it('binds req, res with context', () => {
+      const bindEmitter = jest.fn()
+      const get = jest.fn()
+      const set = jest.fn()
+      const run = jest.fn(cb => cb())
+      const { req, res, next } = reqresnext(null, null, jest.fn())
+      const ns = {
+        bindEmitter,
+        get,
+        set,
+        run
+      }
+      const mware = factory({ns})
+      mware(req, res, next)
+
+      expect(bindEmitter).toHaveBeenCalledWith(req)
+      expect(bindEmitter).toHaveBeenCalledWith(res)
+      expect(run).toHaveBeenCalled()
+      expect(next).toHaveBeenCalled()
+    })
+  })
 })

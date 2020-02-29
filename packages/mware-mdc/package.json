@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "cls-hooked": "^4.2.2"
+    "cls-hooked": "^4.2.2",
+    "@qiwi/mware-context": "*"
   },
   "devDependencies": {
     "lodash": "^4.17.15",
