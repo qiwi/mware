@@ -5,7 +5,8 @@ declare module 'cls-hooked' {
     run: (fn: Function) => void,
     set: (name: string, data: IAny) => void,
     get: (name: string) => IAny,
-    bindEmitter: (fn: Function) => void
+    bindEmitter: (fn: Function) => void,
+    active: boolean
   }
   
   declare module.exports: {

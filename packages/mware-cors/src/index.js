@@ -8,7 +8,7 @@ import type {
   IResponse,
   INext,
   ILogger
-} from '../../mware-core/src/interface'
+} from '@qiwi/mware-core'
 
 import {omit} from 'lodash'
 

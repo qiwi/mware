@@ -7,7 +7,7 @@ import type {
   IResponse,
   INext,
   IAnyObject,
-} from '../../mware-core/src/interface'
+} from '@qiwi/mware-core'
 import Ajv from 'ajv'
 import { BAD_REQUEST, getStatusText } from 'http-status-codes'
 

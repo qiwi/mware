@@ -6,7 +6,7 @@ import type {
   IRequest,
   IResponse,
   INext
-} from '../../mware-core/src/interface'
+} from '@qiwi/mware-core'
 import {address} from 'ip'
 
 export const HOST = 'host'

@@ -8,7 +8,7 @@ import type {
   INext,
   IMiddlewareOpts,
   ILogger, IAny
-} from '../../mware-core/src/interface'
+} from '@qiwi/mware-core'
 import crypto from 'crypto'
 import {BAD_REQUEST, INTERNAL_SERVER_ERROR} from 'http-status-codes'
 

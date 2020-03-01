@@ -5,8 +5,9 @@ import type {
   IRegularMiddleware,
   IRequest,
   IResponse,
-  INext
-} from '../../mware-core/src/interface'
+  INext,
+  IAny
+} from '@qiwi/mware-core'
 
 import {createNamespace, getNamespace} from 'cls-hooked'
 import type {INamespace} from 'cls-hooked'

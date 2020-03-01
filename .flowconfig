@@ -2,7 +2,6 @@
 ./src/
 
 [ignore]
-.*/dist/
 .*/node_modules/config-chain/test/
 
 [libs]

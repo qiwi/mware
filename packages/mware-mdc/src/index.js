@@ -1,13 +1,13 @@
 // @flow
 
+import crypto from 'crypto'
 import type {
   IMiddlewareFactory,
   IRegularMiddleware,
   IRequest,
   IResponse,
   INext
-} from '../../mware-core/src/interface'
-import crypto from 'crypto'
+} from '@qiwi/mware-core'
 import {setContextValue, getContext} from '@qiwi/mware-context'
 
 export const TRACE_KEY = 'trace'
