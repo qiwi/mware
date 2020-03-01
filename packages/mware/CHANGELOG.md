@@ -1,3 +1,11 @@
+# [@qiwi/mware-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
+
+
+### Features
+
+* add flow typings to published pack ([6a3c4c6](https://github.com/qiwi/mware/commit/6a3c4c65400d0673dda1daa173df60436525e75f))
+* **facade:** add clscxt-mware ([8fda337](https://github.com/qiwi/mware/commit/8fda33742a01e63405a79339cb0370e835953b10))
+
 # [@qiwi/mware-v1.8.1](https://github.com/qiwi/mware/compare/v1.8.0...v1.8.1) (2019-08-05)
 
 
