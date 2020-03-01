@@ -1,3 +1,10 @@
+# [@qiwi/mware-mdc-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
+
+
+### Features
+
+* add flow typings to published pack ([6a3c4c6](https://github.com/qiwi/mware/commit/6a3c4c65400d0673dda1daa173df60436525e75f))
+
 # [@qiwi/mware-mdc-v1.9.0](https://github.com/qiwi/mware/compare/v1.8.1...v1.9.0) (2019-12-10)
 
 
