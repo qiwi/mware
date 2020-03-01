@@ -1,3 +1,15 @@
+# [@qiwi/mware-validator-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
+
+
+### Bug Fixes
+
+* **validate:** remove redundant logging ([c7ad13b](https://github.com/qiwi/mware/commit/c7ad13bd08b959407787391f3c5809ea287a88dd))
+
+
+### Features
+
+* add flow typings to published pack ([6a3c4c6](https://github.com/qiwi/mware/commit/6a3c4c65400d0673dda1daa173df60436525e75f))
+
 # [@qiwi/mware-validator-v1.8.1](https://github.com/qiwi/mware/compare/v1.8.0...v1.8.1) (2019-08-05)
 
 
