@@ -39,8 +39,6 @@ export default ((opts?: IOpts) => {
 
   return ((req: IRequest, res: IResponse, next: INext) => {
     if (!ajv.validate(schema || scheme, req)) {
-      console.log(schema || scheme, req)
-
       res
         .status(BAD_REQUEST)
         .send({
