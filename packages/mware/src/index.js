@@ -3,6 +3,7 @@ import logger from '@qiwi/mware-logger'
 import crumbs from '@qiwi/mware-crumbs'
 import cors from '@qiwi/mware-cors'
 import validator from '@qiwi/mware-validator'
+import context from '@qiwi/mware-context'
 import { util } from '@qiwi/mware-core'
 
 export {
@@ -11,6 +12,7 @@ export {
   cors,
   crumbs,
   validator,
+  context,
   util
 }
 
@@ -20,5 +22,6 @@ export default {
   cors,
   crumbs,
   validator,
+  context,
   util
 }

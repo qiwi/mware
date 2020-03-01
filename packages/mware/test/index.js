@@ -1,4 +1,4 @@
-import {mdc, logger, util, cors, crumbs, validator} from '../src'
+import {mdc, logger, util, cors, crumbs, validator, context} from '../src'
 
 describe('mware', () => {
   it('exposes middlewares collection', () => {
@@ -7,6 +7,7 @@ describe('mware', () => {
     expect(cors).toEqual(expect.any(Function))
     expect(crumbs).toEqual(expect.any(Function))
     expect(validator).toEqual(expect.any(Function))
+    expect(context).toEqual(expect.any(Function))
     expect(util).not.toBeUndefined()
   })
 })
