@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "ajv": "^6.12.0",
+    "ajv": "^7.0.0",
     "http-status-codes": "^1.4.0"
   },
   "devDependencies": {
