@@ -1,3 +1,10 @@
+# [@qiwi/mware-logger-v1.11.0](https://github.com/qiwi/mware/compare/v1.10.0...v1.11.0) (2021-06-30)
+
+
+### Features
+
+* add contentLength for request ([eb3c065](https://github.com/qiwi/mware/commit/eb3c06514d2f38024bb0c99a9827bf7b48a6c87f))
+
 # [@qiwi/mware-logger-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
 
 
