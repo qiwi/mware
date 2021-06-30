@@ -1,3 +1,10 @@
+# [@qiwi/mware-v1.11.1](https://github.com/qiwi/mware/compare/v1.11.0...v1.11.1) (2021-06-30)
+
+
+### Bug Fixes
+
+* up deps ([8026cb1](https://github.com/qiwi/mware/commit/8026cb12c7b24937bfbbcde8fd680580278b230c))
+
 # [@qiwi/mware-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
 
 
