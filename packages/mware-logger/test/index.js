@@ -40,7 +40,7 @@ describe('mware-logger', () => {
 
       expect(req.id).toMatch(/^[0-9a-f]{16}$/)
       expect(req.id).toBe(res.id)
-      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+$/))
+      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=9$/))
       expect(next).toHaveBeenCalled()
     })
 

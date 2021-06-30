@@ -26,7 +26,7 @@ export const getLogLevelByStatus = (status: number): string => {
 }
 
 export const DEFAULT_LOGGER = console // TODO inherit from core
-export const REQUEST_TEMPLATE = 'REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip}'
+export const REQUEST_TEMPLATE = 'REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip} contentLength=${contentLength}'
 export const RESPONSE_TEMPLATE = 'RES ${id} < status=${status} duration=${duration}ms contentLength=${contentLength}'
 
 export function interpolate(params: {[key: string]: IAny}): string {
@@ -65,6 +65,9 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
 
     req.id = res.id = id
 
+    const contentLength = (Buffer.from('' + req.body)).length
+
+
     log(
       logger,
       'info',
@@ -75,7 +78,8 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
         target,
         origin,
         method: req.method,
-        headers: JSON.stringify(req.headers)
+        headers: JSON.stringify(req.headers),
+        contentLength
       }
     )
 
