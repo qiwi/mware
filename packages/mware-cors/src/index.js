@@ -18,7 +18,11 @@ export const EXPOSE_HEADERS = 'Access-Control-Expose-Headers'
 export const ALLOW_METHODS = 'Access-Control-Allow-Methods'
 export const ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials'
 
-export const DEFAULT_HEADERS = {
+type Record<T, V> = {
+  [T]: V
+}
+
+export const DEFAULT_HEADERS: Record<string, string> = {
   [ALLOW_ORIGIN]: '*',
   [ALLOW_HEADERS]: 'set-cookie, Authorization, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
   [EXPOSE_HEADERS]: 'Cookie, Set-Cookie, Location',
