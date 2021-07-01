@@ -1,3 +1,10 @@
+# [@qiwi/mware-crumbs-v1.11.3](https://github.com/qiwi/mware/compare/v1.11.2...v1.11.3) (2021-07-01)
+
+
+### Performance Improvements
+
+* update deps ([#63](https://github.com/qiwi/mware/issues/63)) ([935a84d](https://github.com/qiwi/mware/commit/935a84db3c8c74e6fec08f2332c544c6ce362995))
+
 # [@qiwi/mware-crumbs-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
 
 
