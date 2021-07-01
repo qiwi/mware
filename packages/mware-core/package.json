@@ -30,7 +30,7 @@
   "homepage": "https://github.com/qiwi/mware#readme",
   "devDependencies": {
     "flow-copy-source": "^2.0.9",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "reqresnext": "^1.6.3"
   }
 }
