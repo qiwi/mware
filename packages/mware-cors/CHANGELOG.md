@@ -1,3 +1,10 @@
+# [@qiwi/mware-cors-v1.11.2](https://github.com/qiwi/mware/compare/v1.11.1...v1.11.2) (2021-07-01)
+
+
+### Bug Fixes
+
+* **package:** update deps, fix vuls ([2dcdc65](https://github.com/qiwi/mware/commit/2dcdc65ba05ce3779a8451302e988a1bf22aeb1b))
+
 # [@qiwi/mware-cors-v1.10.0](https://github.com/qiwi/mware/compare/v1.9.0...v1.10.0) (2020-03-01)
 
 
