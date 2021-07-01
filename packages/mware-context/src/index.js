@@ -13,13 +13,13 @@ import {createNamespace, getNamespace} from 'cls-hooked'
 import type {INamespace} from 'cls-hooked'
 
 export const DEFAULT_SPACE_ID = 'DEFAULT_SPACE'
-export const DEFAULT_NS = getNamespace(DEFAULT_SPACE_ID) || createNamespace(DEFAULT_SPACE_ID)
+export const DEFAULT_NS: any = getNamespace(DEFAULT_SPACE_ID) || createNamespace(DEFAULT_SPACE_ID)
 export const TRACE_KEY = 'trace'
 
-export const getContextValue = (key: string, ns?: IAny) => {
+export const getContextValue = (key: string, ns?: IAny): any => {
   return getContext(ns).get(key)
 }
-export const setContextValue = (key: string, value: IAny, ns?: IAny) => {
+export const setContextValue = (key: string, value: IAny, ns?: IAny): any => {
   getContext(ns).set(key, value)
 }
 export const getContext = (ns: IAny): INamespace => {
