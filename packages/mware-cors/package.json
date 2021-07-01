@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "reqresnext": "^1.6.3"
