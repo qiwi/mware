@@ -55,7 +55,7 @@
     "babel-polyfill": "^6.26.0",
     "coveralls": "^3.1.1",
     "docma": "^3.2.2",
-    "eslint": "^7.29.0",
+    "eslint": "7.30.0",
     "eslint-plugin-flowtype": "^5.8.0",
     "flow-bin": "^0.154.0",
     "flow-coverage-report": "^0.8.0",
