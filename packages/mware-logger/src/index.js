@@ -46,6 +46,14 @@ export type ILoggerMiddlewareOpts = IMiddlewareOpts & {
   resTemplate?: string
 }
 
+const getReqContentLength = (body) => {
+  try {
+    return body ? (Buffer.from(JSON.stringify(body))).length : 0
+  } catch {
+    return (Buffer.from('' + body)).length
+  }
+}
+
 export default ((opts?: ILoggerMiddlewareOpts) => {
   const logger = opts && opts.logger || DEFAULT_LOGGER
   const reqTemplate = opts && opts.reqTemplate || REQUEST_TEMPLATE
@@ -65,8 +73,7 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
 
     req.id = res.id = id
 
-    const contentLength = (Buffer.from('' + req.body)).length
-
+    const contentLength = getReqContentLength(req.body)
 
     log(
       logger,

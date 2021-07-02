@@ -40,7 +40,50 @@ describe('mware-logger', () => {
 
       expect(req.id).toMatch(/^[0-9a-f]{16}$/)
       expect(req.id).toBe(res.id)
-      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=9$/))
+      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=0$/))
+      expect(next).toHaveBeenCalled()
+    })
+
+    it('with body', () => {
+      const { req, res, next } = reqresnext(
+        {
+          url: 'http://example.com/foo/bar',
+          method: 'GET',
+          headers: {
+            origin: 'example.com'
+          },
+          body: {
+            example: 'value'
+          }
+        },
+        null,
+        jest.fn()
+      )
+      mware(req, res, next)
+
+      expect(req.id).toMatch(/^[0-9a-f]{16}$/)
+      expect(req.id).toBe(res.id)
+      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=19$/))
+      expect(next).toHaveBeenCalled()
+    })
+
+    it('with empty body', () => {
+      const { req, res, next } = reqresnext(
+        {
+          url: 'http://example.com/foo/bar',
+          method: 'GET',
+          headers: {
+            origin: 'example.com'
+          }
+        },
+        null,
+        jest.fn()
+      )
+      mware(req, res, next)
+
+      expect(req.id).toMatch(/^[0-9a-f]{16}$/)
+      expect(req.id).toBe(res.id)
+      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=0$/))
       expect(next).toHaveBeenCalled()
     })
 
