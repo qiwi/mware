@@ -65,8 +65,7 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
 
     req.id = res.id = id
 
-    const contentLength = (Buffer.from('' + req.body)).length
-
+    const contentLength = req.body ? (Buffer.from(JSON.stringify(req.body))).length : 0
 
     log(
       logger,
