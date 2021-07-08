@@ -59,7 +59,7 @@
     "eslint-plugin-flowtype": "^5.8.0",
     "flow-bin": "^0.154.0",
     "flow-coverage-report": "^0.8.0",
-    "flow-remove-types": "^2.154.0",
+    "flow-remove-types": "2.155.0",
     "flow-typed": "^3.3.1",
     "gen-flow-files": "^0.4.11",
     "jest": "^27.0.6",
