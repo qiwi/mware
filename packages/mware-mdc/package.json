@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-mdc",
-  "version": "1.11.3",
+  "version": "1.12.1",
   "private": false,
   "description": "MDC middleware",
   "main": "target/es5/index.js",
