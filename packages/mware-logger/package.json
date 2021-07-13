@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "lodash": "^4.17.21",
-    "reqresnext": "^1.6.3",
+    "reqresnext": "1.6.3",
     "express": "4.17.1",
     "supertest": "6.1.3"
   }
