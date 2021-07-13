@@ -32,7 +32,7 @@
     "ip": "^1.1.5"
   },
   "devDependencies": {
-    "lodash": "^4.17.21",
+    "lodash": "4.17.21",
     "reqresnext": "^1.6.3"
   }
 }
