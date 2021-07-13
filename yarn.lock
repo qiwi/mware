@@ -5476,10 +5476,10 @@ flow-annotation-check@^1.8.1:
     glob "7.1.6"
     load-pkg "^4.0.0"
 
-flow-bin@^0.154.0:
-  version "0.154.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.154.0.tgz#e086964398e671daa8f56ed8663d7876337f77e5"
-  integrity sha512-I6u2ETdkAyard+8C5na6bfZp4EM0zIMB7O5zH4GKzBLv9/y8/NYRTxEXQe5T0hvj9R9DxFBUoPsFK76ziweUFw==
+flow-bin@^0.155.0:
+  version "0.155.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.155.0.tgz#db2a9712b13f66e9318e167a89f6f28bcb1c49dc"
+  integrity sha512-OTMVh3KJDNYkmLT/txrpgpJK5FCHxfbxSK7IM2V4YQx+BQibEkrJEufSwB6cyKieFKRcO3F46NqgfNgLw+RWUA==
 
 flow-copy-source@^2.0.9:
   version "2.0.9"
@@ -10209,13 +10209,13 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-reqresnext@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/reqresnext/-/reqresnext-1.6.3.tgz#4f3bd8681fcc48d42f1ff5ad6b1885f91d3386d0"
-  integrity sha512-wdcNuBJVct1UNj3f0UdviFCq++SEbn6vO1tWmwyX+G75tBDsYEBVnSOjHJiHDxZpmrySgrD8M42U3ZeVDEmaGA==
+reqresnext@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/reqresnext/-/reqresnext-1.6.4.tgz#984a0ebe3890352f495fa10d3163abfd649d058e"
+  integrity sha512-QnZz+NlBj9nrg4KLAdlJQxJdOkFMbh4C9BSVjOMJXxRmCm5YHzPFI0g2Tf9OKrgpyLlfKTVLcHvHMAxXRdpL3w==
   dependencies:
     express "^4.17.1"
-    lodash "^4.17.15"
+    lodash "^4.17.21"
     setprototypeof "^1.2.0"
 
 request-promise-core@1.1.4:
