@@ -1,3 +1,10 @@
+# [@qiwi/mware-logger-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
+
+
+### Bug Fixes
+
+* up deps and renovate ([128c619](https://github.com/qiwi/mware/commit/128c619c4ec9c7bb46524de351379329a3992f95))
+
 # [@qiwi/mware-logger-v1.12.0](https://github.com/qiwi/mware/compare/v1.11.5...v1.12.0) (2021-07-13)
 
 
