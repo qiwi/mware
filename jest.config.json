@@ -8,7 +8,9 @@
     "<rootDir>/packages/**/src/**/*.js"
   ],
   "testMatch": [
-    "<rootDir>/packages/**/test/**/*.js"
+    "<rootDir>/packages/**/test/it/**/*.js",
+    "<rootDir>/packages/**/test/unit/**/*.js"
+
   ],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",
