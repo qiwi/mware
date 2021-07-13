@@ -10209,13 +10209,13 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-reqresnext@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/reqresnext/-/reqresnext-1.6.3.tgz#4f3bd8681fcc48d42f1ff5ad6b1885f91d3386d0"
-  integrity sha512-wdcNuBJVct1UNj3f0UdviFCq++SEbn6vO1tWmwyX+G75tBDsYEBVnSOjHJiHDxZpmrySgrD8M42U3ZeVDEmaGA==
+reqresnext@1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/reqresnext/-/reqresnext-1.6.4.tgz#984a0ebe3890352f495fa10d3163abfd649d058e"
+  integrity sha512-QnZz+NlBj9nrg4KLAdlJQxJdOkFMbh4C9BSVjOMJXxRmCm5YHzPFI0g2Tf9OKrgpyLlfKTVLcHvHMAxXRdpL3w==
   dependencies:
     express "^4.17.1"
-    lodash "^4.17.15"
+    lodash "^4.17.21"
     setprototypeof "^1.2.0"
 
 request-promise-core@1.1.4:

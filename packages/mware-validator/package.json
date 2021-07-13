@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "lodash": "^4.17.21",
-    "reqresnext": "^1.6.3"
+    "reqresnext": "1.6.4"
   }
 }
