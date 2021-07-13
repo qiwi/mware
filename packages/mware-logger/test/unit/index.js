@@ -1,19 +1,18 @@
 import reqresnext from 'reqresnext'
-import factory, {getLogLevelByStatus} from '../src'
+import factory, { getLogLevelByStatus } from '../../src'
 
 describe('mware-logger', () => {
   const info = jest.fn()
   const warn = jest.fn()
   const error = jest.fn()
   const debug = jest.fn()
-  const { req, res, next } = reqresnext(null, null, jest.fn())
   const logger = {
     info,
     warn,
     error,
     debug
   }
-  const mware = factory({logger})
+  const mware = factory({ logger })
 
   beforeEach(() => {
     jest.resetAllMocks()
@@ -38,49 +37,7 @@ describe('mware-logger', () => {
       )
       mware(req, res, next)
 
-      expect(req.id).toMatch(/^[0-9a-f]{16}$/)
-      expect(req.id).toBe(res.id)
-      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=0$/))
-      expect(next).toHaveBeenCalled()
-    })
-
-    it('with body', () => {
-      const { req, res, next } = reqresnext(
-        {
-          url: 'http://example.com/foo/bar',
-          method: 'GET',
-          headers: {
-            origin: 'example.com'
-          },
-          body: {
-            example: 'value'
-          }
-        },
-        null,
-        jest.fn()
-      )
-      mware(req, res, next)
-
-      expect(req.id).toMatch(/^[0-9a-f]{16}$/)
-      expect(req.id).toBe(res.id)
-      expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=19$/))
-      expect(next).toHaveBeenCalled()
-    })
-
-    it('with empty body', () => {
-      const { req, res, next } = reqresnext(
-        {
-          url: 'http://example.com/foo/bar',
-          method: 'GET',
-          headers: {
-            origin: 'example.com'
-          }
-        },
-        null,
-        jest.fn()
-      )
-      mware(req, res, next)
-
+      req.emit('end')
       expect(req.id).toMatch(/^[0-9a-f]{16}$/)
       expect(req.id).toBe(res.id)
       expect(info).toHaveBeenCalledWith(expect.stringMatching(/^REQ .{16} > method=GET target=http:\/\/example.com\/foo\/bar origin=example.com .+ contentLength=0$/))
@@ -113,7 +70,7 @@ describe('mware-logger', () => {
         null,
         jest.fn()
       )
-      const send = jest.spyOn(res, 'send')
+
       mware(req, res, next)
 
       res.on('finish', () => {
