@@ -1,3 +1,10 @@
+# [@qiwi/mware-logger-v1.12.0](https://github.com/qiwi/mware/compare/v1.11.5...v1.12.0) (2021-07-13)
+
+
+### Features
+
+* update counting contentLength ([7b7f73c](https://github.com/qiwi/mware/commit/7b7f73cea451cba9e639effa3a5d95336e4fc936))
+
 # [@qiwi/mware-logger-v1.11.4](https://github.com/qiwi/mware/compare/v1.11.3...v1.11.4) (2021-07-02)
 
 
