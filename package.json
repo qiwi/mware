@@ -64,7 +64,7 @@
     "gen-flow-files": "^0.4.11",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
-    "semantic-release": "17.4.4",
+    "semantic-release": "17.4.5",
     "semantic-release-monorepo": "7.0.5",
     "semantic-release-monorepo-hooks": "2.9.8",
     "semantic-release-plugin-decorators": "^3.0.1",
