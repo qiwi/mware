@@ -19,10 +19,10 @@ describe('mware-validator', () => {
         }
       }
     }
-    const date = '2000-01-32T20:20:20Z'
+    const date = '2001-13-01T20:20:20Z'
 
     it('fast', () => {
-      const validator = factory({schema, opts: {format: 'fast'}})
+      const validator = factory({schema, opts: {mode: 'fast', formats: ["date-time"], keywords: true}})
       const next = jest.fn()
       const res = {send: jest.fn(), status() {return res}}
 
@@ -32,13 +32,13 @@ describe('mware-validator', () => {
     })
 
     it('full (strict)', () => {
-      const validator = factory({schema, opts: {format: 'full'}})
+      const validator = factory({schema, opts: {mode: 'full'}})
       const next = jest.fn()
       const res = {send: jest.fn(), status() {return res}}
 
       validator({date}, res, next)
       expect(next).not.toHaveBeenCalled()
-      expect(res.send).toHaveBeenCalledWith({"details": "data.date should match format \"date-time\"", "message": "Bad Request"})
+      expect(res.send).toHaveBeenCalledWith({"details": "data/date must match format \"date-time\"", "message": "Bad Request"})
     })
   })
 
@@ -106,7 +106,7 @@ describe('mware-validator', () => {
 
       mware(req, res, next)
 
-      expect(res.body).toBe("{\"message\":\"Bad Request\",\"details\":\"data.headers should have required property 'foo'\"}")
+      expect(res.body).toBe("{\"message\":\"Bad Request\",\"details\":\"data must have required property 'query'\"}")
       expect(res.statusCode).toBe(BAD_REQUEST)
       expect(next).not.toHaveBeenCalled()
     })
