@@ -18,7 +18,7 @@
     "flow": "flow",
     "flow_coverage": "flow-coverage-report -i 'src/**/*.js' -t html -t json -t text --threshold 90",
     "fetch_libdefs": "flow-typed install lodash@4.17.10",
-    "lint": "standard packages/**/src/**/*.js packages/**/test/**/*.js",
+    "lint": "eslint packages/**/src/**/*.js packages/**/test/**/*.js",
     "docs": "docma -c ./docma.json",
     "show_docs": "node scripts/docsapp.js",
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test"
@@ -33,71 +33,41 @@
   "author": "Anton Golub <a.golub@qiwi.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
-    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-flow": "^7.14.5",
-    "@babel/register": "^7.15.3",
-    "@babel/runtime-corejs3": "^7.15.3",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-flow": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "@babel/runtime-corejs3": "^7.16.3",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/commit-analyzer": "9.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",
     "@semantic-release/npm": "8.0.3",
     "@semantic-release/release-notes-generator": "10.0.2",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.0.6",
-    "babel-polyfill": "^6.26.0",
+    "babel-jest": "^27.3.1",
     "coveralls": "^3.1.1",
     "docma": "^3.2.2",
-    "eslint": "^7.32.0",
-    "eslint-plugin-flowtype": "^8.0.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-flowtype": "^8.0.3",
     "flow-bin": "^0.164.0",
     "flow-coverage-report": "^0.8.0",
-    "flow-remove-types": "^2.158.0",
-    "flow-typed": "^3.3.1",
+    "flow-remove-types": "^2.164.0",
+    "flow-typed": "^3.4.0",
     "gen-flow-files": "^0.4.11",
-    "jest": "^27.0.6",
+    "jest": "^27.3.1",
     "lerna": "^4.0.0",
     "semantic-release": "18.0.0",
     "semantic-release-monorepo": "7.0.5",
     "semantic-release-monorepo-hooks": "2.9.8",
-    "semantic-release-plugin-decorators": "^3.0.1",
-    "standard": "^16.0.3"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
-    ],
-    "globals": [
-      "jest",
-      "it",
-      "expect",
-      "describe",
-      "before",
-      "beforeAll",
-      "beforeEach",
-      "afterAll",
-      "after",
-      "afterEach",
-      "xdescribe",
-      "xit"
-    ],
-    "rules": {
-      "use-flow-type": 1
-    },
-    "ignore": [],
-    "settings": {
-      "flowtype": {
-        "onlyFilesWithFlowAnnotation": true
-      }
-    }
+    "semantic-release-plugin-decorators": "^3.0.1"
   },
   "dependencies": {}
 }
