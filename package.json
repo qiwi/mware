@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
-    "build": "yarn clean && lerna run --stream build",
+    "build": "lerna run --stream build",
     "build:es6": "lerna run --stream build:es6",
     "build:es5": "lerna run --stream build:es5",
     "build:flow": "lerna run --stream build:flow",
