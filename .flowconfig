@@ -6,6 +6,7 @@
 
 [libs]
 ./flow-typed/
+./flow-typed/npm
 
 [lints]
 deprecated-utility=off
