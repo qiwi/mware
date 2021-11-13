@@ -1,3 +1,11 @@
+# [@qiwi/mware-validator-v1.12.2](https://github.com/qiwi/mware/compare/v1.12.1...v1.12.2) (2021-11-13)
+
+
+### Bug Fixes
+
+* **package:** update deps, fix some vuls ([56d4fe7](https://github.com/qiwi/mware/commit/56d4fe7f089741c4d18d5a0bdba985c14234ab78))
+* **validator:** pass options to ajvFormats helper ([ef49cf8](https://github.com/qiwi/mware/commit/ef49cf8d603eb9be3e1f3c1fc42401dab9235719))
+
 # [@qiwi/mware-validator-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
 
 

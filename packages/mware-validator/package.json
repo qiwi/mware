@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-validator",
-  "version": "1.12.1",
+  "version": "1.12.2",
   "private": false,
   "description": "JSON-schema based validator middleware",
   "main": "target/es5/index.js",
