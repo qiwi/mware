@@ -10,7 +10,7 @@ import type {
   ILogger, IAny
 } from '@qiwi/mware-core'
 import crypto from 'crypto'
-import {BAD_REQUEST, INTERNAL_SERVER_ERROR} from 'http-status-codes'
+import { StatusCodes } from 'http-status-codes'
 
 export const DEBUG = 'debug'
 export const INFO = 'info'
@@ -18,9 +18,9 @@ export const WARN = 'warn'
 export const ERROR = 'error'
 
 export const getLogLevelByStatus = (status: number): string => {
-  return status < BAD_REQUEST
+  return status < StatusCodes.BAD_REQUEST
     ? INFO
-    : status >= INTERNAL_SERVER_ERROR
+    : status >= StatusCodes.INTERNAL_SERVER_ERROR
       ? ERROR
       : WARN
 }
