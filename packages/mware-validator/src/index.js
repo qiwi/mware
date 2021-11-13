@@ -9,6 +9,7 @@ import type {
   IAnyObject,
 } from '@qiwi/mware-core'
 import Ajv from 'ajv'
+import addAjvFormats from 'ajv-formats'
 import { BAD_REQUEST, getStatusText } from 'http-status-codes'
 
 export type IOpts = {
@@ -28,6 +29,7 @@ const getAjv = (opts = {}) => {
 
   if (!ajvStack[key]) {
     ajvStack[key] = new Ajv(opts)
+    addAjvFormats(ajvStack[key], opts)
   }
 
   return ajvStack[key]
