@@ -1,3 +1,10 @@
+# [@qiwi/mware-core-v1.12.2](https://github.com/qiwi/mware/compare/v1.12.1...v1.12.2) (2021-11-13)
+
+
+### Bug Fixes
+
+* **package:** update deps, fix some vuls ([56d4fe7](https://github.com/qiwi/mware/commit/56d4fe7f089741c4d18d5a0bdba985c14234ab78))
+
 # [@qiwi/mware-core-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
 
 
