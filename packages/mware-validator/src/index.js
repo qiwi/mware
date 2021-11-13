@@ -10,7 +10,7 @@ import type {
 } from '@qiwi/mware-core'
 import Ajv from 'ajv'
 import addAjvFormats from 'ajv-formats'
-import { BAD_REQUEST, getStatusText } from 'http-status-codes'
+import { StatusCodes, ReasonPhrases } from 'http-status-codes'
 
 export type IOpts = {
   schema: IAnyObject,
@@ -42,9 +42,9 @@ export default ((opts?: IOpts) => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     if (!ajv.validate(schema || scheme, req)) {
       res
-        .status(BAD_REQUEST)
+        .status(StatusCodes.BAD_REQUEST)
         .send({
-          message: getStatusText(BAD_REQUEST),
+          message: ReasonPhrases.BAD_REQUEST,
           details: ajv.errorsText()
         })
 

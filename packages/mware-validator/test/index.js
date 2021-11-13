@@ -1,6 +1,6 @@
 import factory from '../src'
 import reqresnext from 'reqresnext'
-import {BAD_REQUEST} from 'http-status-codes'
+import { StatusCodes } from 'http-status-codes'
 
 describe('mware-validator', () => {
   beforeEach(() => jest.resetAllMocks)
@@ -107,7 +107,7 @@ describe('mware-validator', () => {
       mware(req, res, next)
 
       expect(res.body).toBe("{\"message\":\"Bad Request\",\"details\":\"data must have required property 'query'\"}")
-      expect(res.statusCode).toBe(BAD_REQUEST)
+      expect(res.statusCode).toBe(StatusCodes.BAD_REQUEST)
       expect(next).not.toHaveBeenCalled()
     })
   })
