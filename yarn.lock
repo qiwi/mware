@@ -5666,10 +5666,10 @@ flow-annotation-check@^1.8.1:
     glob "7.1.6"
     load-pkg "^4.0.0"
 
-flow-bin@^0.165.0:
-  version "0.165.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.165.0.tgz#e0bca35901761acdab3ad179697d34a0ca1541ba"
-  integrity sha512-1X9b2NA7SOdXyhCniIg6ViiA02FGspmLuqu5Ti0NsWDKmquRccgpoQ3Vob5EC5gRpnuuwlqdfFlLOvlnsecgVg==
+flow-bin@^0.166.0:
+  version "0.166.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.166.0.tgz#2450055cfd8d8949587c185801e000ee5988203a"
+  integrity sha512-K+NfLBG8Pe21rRDiJAEa88gQsIHmz8sGGjNo5CuX8maU3lrwMs4NP4rJ41DCB6eynkF1EX5iZmjA/e1rT192qw==
 
 flow-copy-source@^2.0.9:
   version "2.0.9"
