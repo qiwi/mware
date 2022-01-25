@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "http-status-codes": "^2.1.4"
+    "http-status-codes": "^2.2.0"
   },
   "devDependencies": {
     "lodash": "^4.17.21",
