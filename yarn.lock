@@ -6135,10 +6135,10 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gen-flow-files@^0.4.11:
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/gen-flow-files/-/gen-flow-files-0.4.11.tgz#ace4934f529aa6a40c83337f21494ed6dc57ac4e"
-  integrity sha512-88WjoL6gaxTaJtSal6Nsw9LerVKRVjQEAJy330VOmCS1k+lu2h1HJEJyU9LhviaphZBNG088j6JigA6YiP0xGQ==
+gen-flow-files@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/gen-flow-files/-/gen-flow-files-0.5.0.tgz#860c7fae28992a191d33de72fa2fa67d0e974f22"
+  integrity sha512-xzS9stax6Dgjbva5L1iSVHri6UzTx1Bu3mmKCVm1pIFoG+bozz0DAQgtOYi4PNVn2mnl3Vidh7RXTV3e2lEynQ==
   dependencies:
     "@babel/core" "^7.7.5"
     "@babel/generator" "^7.7.4"
