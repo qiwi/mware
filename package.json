@@ -61,7 +61,7 @@
     "flow-coverage-report": "^0.8.0",
     "flow-remove-types": "^2.170.0",
     "flow-typed": "^3.6.1",
-    "gen-flow-files": "^0.4.11",
+    "gen-flow-files": "^0.5.0",
     "jest": "^27.4.7",
     "lerna": "^4.0.0",
     "semantic-release": "19.0.2",
