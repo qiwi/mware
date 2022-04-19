@@ -31,13 +31,13 @@
   "dependencies": {
     "@qiwi/mware-core": "^1.12.2",
     "@qiwi/mware-mdc": "^1.12.1",
-    "@qiwi/mware-logger": "^1.12.1",
+    "@qiwi/mware-logger": "^1.12.3",
     "@qiwi/mware-crumbs": "^1.12.1",
     "@qiwi/mware-cors": "^1.12.1",
-    "@qiwi/mware-validator": "^1.12.2"
+    "@qiwi/mware-validator": "^1.12.3"
   },
   "devDependencies": {
     "lodash": "^4.17.21",
-    "reqresnext": "^1.6.4"
+    "reqresnext": "^1.7.0"
   }
 }
