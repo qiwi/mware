@@ -1,3 +1,15 @@
+# @qiwi/mware-context 1.0.0 (2022-05-03)
+
+
+### Bug Fixes
+
+* up deps, fix vuls, move to gh-actions, drop lerna ([0fc8ff2](https://github.com/qiwi/mware/commit/0fc8ff291e18679bc3376f7ba70ec629aef1e9ad)), closes [#137](https://github.com/qiwi/mware/issues/137)
+
+
+### Features
+
+* tech release ([30096f2](https://github.com/qiwi/mware/commit/30096f294a85a599d1910b017c84b99803965f98))
+
 # [@qiwi/mware-context-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
 
 
