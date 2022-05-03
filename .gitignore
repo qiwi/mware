@@ -38,3 +38,12 @@ flow-typed/npm/
 
 .idea
 *.iml
+
+# Yarn berry
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

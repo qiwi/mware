@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "noEmitHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": false,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+
+    "esModuleInterop": true,
+    "composite": true,
+    "incremental": true
+  }
+}

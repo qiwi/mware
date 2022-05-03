@@ -8,11 +8,11 @@ npm i @qiwi/mware
 ```
 
 ### Middlewares
-* [mware-mdc](../mware-mdc/README.md)
-* [mware-logger](../mware-logger/README.md)
-* [mware-crumbs](../mware-crumbs/README.md)
-* [mware-cors](../mware-cors/README.md)
-* [mware-validator](../mware-validator/README.md)
+* [mware-mdc](../mdc/README.md)
+* [mware-logger](../logger/README.md)
+* [mware-crumbs](../crumbs/README.md)
+* [mware-cors](../cors/README.md)
+* [mware-validator](../validator/README.md)
 
 ### Usage
 
