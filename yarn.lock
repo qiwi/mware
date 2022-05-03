@@ -1948,7 +1948,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-core@^1.12.2, @qiwi/mware-core@workspace:packages/core":
+"@qiwi/mware-core@1.13.0, @qiwi/mware-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-core@workspace:packages/core"
   dependencies:
@@ -1959,16 +1959,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-cors@npm:^1.12.1":
-  version: 1.12.1
-  resolution: "@qiwi/mware-cors@npm:1.12.1"
-  dependencies:
-    lodash: ^4.17.21
-  checksum: 1a7dd6e4585c91ae410c2f39c28f535e547fbf18b35df0d3ba4287e3c9d0d6fd26fea00b026145bbfae130a4f405990d3101b31ee7cc0597df7f773c1cecf828
-  languageName: node
-  linkType: hard
-
-"@qiwi/mware-cors@workspace:packages/cors":
+"@qiwi/mware-cors@1.12.0, @qiwi/mware-cors@workspace:packages/cors":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-cors@workspace:packages/cors"
   dependencies:
@@ -1978,7 +1969,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-crumbs@^1.12.1, @qiwi/mware-crumbs@workspace:packages/crumbs":
+"@qiwi/mware-crumbs@1.13.0, @qiwi/mware-crumbs@workspace:packages/crumbs":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-crumbs@workspace:packages/crumbs"
   dependencies:
@@ -1989,7 +1980,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-infra@*, @qiwi/mware-infra@1.0.0, @qiwi/mware-infra@workspace:packages/infra":
+"@qiwi/mware-infra@1.0.0, @qiwi/mware-infra@workspace:packages/infra":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-infra@workspace:packages/infra"
   dependencies:
@@ -2031,7 +2022,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-logger@^1.12.3, @qiwi/mware-logger@workspace:packages/logger":
+"@qiwi/mware-logger@1.13.0, @qiwi/mware-logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-logger@workspace:packages/logger"
   dependencies:
@@ -2044,7 +2035,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-mdc@^1.12.1, @qiwi/mware-mdc@workspace:packages/mdc":
+"@qiwi/mware-mdc@1.13.0, @qiwi/mware-mdc@workspace:packages/mdc":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-mdc@workspace:packages/mdc"
   dependencies:
@@ -2064,7 +2055,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-validator@^1.12.3, @qiwi/mware-validator@workspace:packages/validator":
+"@qiwi/mware-validator@1.13.0, @qiwi/mware-validator@workspace:packages/validator":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-validator@workspace:packages/validator"
   dependencies:
@@ -2081,13 +2072,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware@workspace:packages/facade"
   dependencies:
-    "@qiwi/mware-core": ^1.12.2
-    "@qiwi/mware-cors": ^1.12.1
-    "@qiwi/mware-crumbs": ^1.12.1
-    "@qiwi/mware-infra": "*"
-    "@qiwi/mware-logger": ^1.12.3
-    "@qiwi/mware-mdc": ^1.12.1
-    "@qiwi/mware-validator": ^1.12.3
+    "@qiwi/mware-core": 1.13.0
+    "@qiwi/mware-cors": 1.12.0
+    "@qiwi/mware-crumbs": 1.13.0
+    "@qiwi/mware-infra": 1.0.0
+    "@qiwi/mware-logger": 1.13.0
+    "@qiwi/mware-mdc": 1.13.0
+    "@qiwi/mware-validator": 1.13.0
     lodash: ^4.17.21
     reqresnext: ^1.7.0
   languageName: unknown

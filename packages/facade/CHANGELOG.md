@@ -1,3 +1,23 @@
+# @qiwi/mware [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware@1.12.3...@qiwi/mware@1.13.0) (2022-05-03)
+
+
+### Features
+
+* tech release ([30096f2](https://github.com/qiwi/mware/commit/30096f294a85a599d1910b017c84b99803965f98))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/mware-core:** upgraded to 1.13.0
+* **@qiwi/mware-cors:** upgraded to 1.12.0
+* **@qiwi/mware-crumbs:** upgraded to 1.13.0
+* **@qiwi/mware-logger:** upgraded to 1.13.0
+* **@qiwi/mware-mdc:** upgraded to 1.13.0
+* **@qiwi/mware-validator:** upgraded to 1.13.0
+
 # [@qiwi/mware-v1.12.3](https://github.com/qiwi/mware/compare/v1.12.2...v1.12.3) (2022-01-25)
 
 
