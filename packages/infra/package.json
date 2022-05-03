@@ -14,6 +14,7 @@
     "clean": "exit 0"
   },
   "bin": {
+    "babel": "../../node_modules/.bin/babel",
     "buildstamp": "../../node_modules/.bin/buildstamp",
     "flow": "../../node_modules/.bin/flow",
     "flow-remove-types": "../../node_modules/.bin/flow-remove-types",

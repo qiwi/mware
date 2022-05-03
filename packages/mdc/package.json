@@ -29,10 +29,10 @@
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
     "@qiwi/mware-context": "*",
-    "@qiwi/mware-infra": "*",
     "cls-hooked": "^4.2.2"
   },
   "devDependencies": {
+    "@qiwi/mware-infra": "*",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0"
   }
