@@ -6,8 +6,8 @@
   ],
   "scripts": {
     "clean": "yarn workspaces foreach -tp run clean",
-    "flow:fetch": "flow-typed install lodash@4.17.10",
-    "flow:coverage": "flow-coverage-report -i 'packages/**/src/**/*.js' -t html -t json -t text --threshold 50",
+    "flow:fetch": "node_modules/.bin/flow-typed install lodash@4.17.10",
+    "flow:coverage": "node_modules/.bin/flow-coverage-report -i 'packages/**/src/**/*.js' -t html -t json -t text --threshold 50",
     "build": "yarn flow:fetch && yarn workspaces foreach -tp run build",
     "build:es6": "yarn workspaces foreach -tp run build:es6",
     "build:es5": "yarn workspaces foreach -tp run build:es5",

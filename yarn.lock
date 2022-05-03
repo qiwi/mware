@@ -2542,6 +2542,7 @@ __metadata:
     jest: ^28.0.3
     snazzy: ^9.0.0
   bin:
+    babel: ../../node_modules/.bin/babel
     buildstamp: ../../node_modules/.bin/buildstamp
     flow: ../../node_modules/.bin/flow
     flow-remove-types: ../../node_modules/.bin/flow-remove-types
@@ -2581,6 +2582,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-validator@workspace:packages/validator"
   dependencies:
+    "@qiwi/mware-infra": "*"
     ajv: ^8.11.0
     ajv-formats: ^2.1.1
     http-status-codes: ^2.2.0
