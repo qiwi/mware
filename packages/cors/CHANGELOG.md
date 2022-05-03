@@ -1,3 +1,10 @@
+# @qiwi/mware-cors [1.12.0](https://github.com/qiwi/mware/compare/@qiwi/mware-cors@1.11.2...@qiwi/mware-cors@1.12.0) (2022-05-03)
+
+
+### Features
+
+* tech release ([30096f2](https://github.com/qiwi/mware/commit/30096f294a85a599d1910b017c84b99803965f98))
+
 # [@qiwi/mware-cors-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
 
 
