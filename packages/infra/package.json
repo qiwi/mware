@@ -53,9 +53,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiwi/substrate.git"
+    "url": "https://github.com/qiwi/mware.git"
   },
   "bugs": {
-    "url": "https://github.com/qiwi/substrate/issues"
-  }
+    "url": "https://github.com/qiwi/mware/issues"
+  },
+  "homepage": "https://github.com/qiwi/mware#readme"
 }
