@@ -1982,7 +1982,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-crumbs@workspace:packages/crumbs"
   dependencies:
-    "@qiwi/mware-infra": "*"
+    "@qiwi/mware-infra": 1.0.0
     ip: ^1.1.5
     lodash: ^4.17.21
     reqresnext: ^1.7.0
