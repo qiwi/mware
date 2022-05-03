@@ -1,3 +1,10 @@
+# @qiwi/mware-infra 1.0.0 (2022-05-03)
+
+
+### Bug Fixes
+
+* up deps, fix vuls, move to gh-actions, drop lerna ([0fc8ff2](https://github.com/qiwi/mware/commit/0fc8ff291e18679bc3376f7ba70ec629aef1e9ad)), closes [#137](https://github.com/qiwi/mware/issues/137)
+
 ## @qiwi/substrate-infra [1.2.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.2.0...@qiwi/substrate-infra@1.2.1) (2022-04-02)
 
 
