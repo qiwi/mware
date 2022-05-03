@@ -1938,7 +1938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/mware-context@*, @qiwi/mware-context@workspace:packages/context":
+"@qiwi/mware-context@1.13.0, @qiwi/mware-context@workspace:packages/context":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-context@workspace:packages/context"
   dependencies:
@@ -2048,8 +2048,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-mdc@workspace:packages/mdc"
   dependencies:
-    "@qiwi/mware-context": "*"
-    "@qiwi/mware-infra": "*"
+    "@qiwi/mware-context": 1.13.0
+    "@qiwi/mware-infra": 1.0.0
     cls-hooked: ^4.2.2
     lodash: ^4.17.21
     reqresnext: ^1.7.0
