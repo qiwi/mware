@@ -28,3 +28,6 @@ app.get('/profile/:profileId', am(async (req, res) => {
 
 app.listen(...)
 ```
+
+### License
+MIT

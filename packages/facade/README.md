@@ -28,7 +28,7 @@ app.listen(...)
 ```
 
 ### Utils
-```
+```js
 import express from 'express'
 import {util} from '@qiwi/mware'
 
@@ -43,5 +43,6 @@ app.get('/', asyncMiddleware(async (req, res, next) => {
 app.use((error, req, res, next) => {
     error // Error('Something went wrong')
 })
-
 ```
+### License
+MIT

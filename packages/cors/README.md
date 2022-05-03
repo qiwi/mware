@@ -33,3 +33,6 @@ app.get('/foo/bar', (req, res) => {
 
 app.listen(...)
 ```
+
+### License
+MIT

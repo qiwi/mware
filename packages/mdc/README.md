@@ -22,3 +22,6 @@ app.get('/', (req, res) => {
 })
 app.listen(...)
 ```
+
+### License
+MIT

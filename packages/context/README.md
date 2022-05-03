@@ -3,7 +3,9 @@ Middleware to attach CLS-based context to current request.
 
 ### Install
 ```bash
+#yarn
 yarn add @qiwi/mware-context
+#npm
 npm i @qiwi/mware-context
 ```
 
@@ -21,3 +23,6 @@ app.get('/foo/bar', (req, res) => {
   getContext().get('some-value-like-trace')
 })
 ```
+
+### License
+MIT

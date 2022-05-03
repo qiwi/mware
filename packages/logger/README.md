@@ -22,3 +22,6 @@ app.get('/foo/bar', (req, res) => res.status(503).send('foobar'))
 
 app.listen(...)
 ```
+
+### License
+MIT

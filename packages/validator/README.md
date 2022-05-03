@@ -39,3 +39,6 @@ app.get('/foo/:id', validator({schema}), (req, res) => {
 
 app.listen(...)
 ```
+
+### License
+MIT
