@@ -74,7 +74,7 @@ jobs:
           name: target
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
       - name: Install deps
         run: |
           sudo apt-get install moreutils
@@ -97,7 +97,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-20.04 ]
-        node-version: [ 14, 18 ]
+        node-version: [ 14, 16 ]
     name: Test (Node v${{ matrix.node-version }}, OS ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
