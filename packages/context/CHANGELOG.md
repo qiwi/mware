@@ -1,3 +1,10 @@
+# @qiwi/mware-context [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-context@1.12.1...@qiwi/mware-context@1.13.0) (2022-05-03)
+
+
+### Features
+
+* tech release ([30096f2](https://github.com/qiwi/mware/commit/30096f294a85a599d1910b017c84b99803965f98))
+
 # [@qiwi/mware-context-v1.12.1](https://github.com/qiwi/mware/compare/v1.12.0...v1.12.1) (2021-07-13)
 
 
