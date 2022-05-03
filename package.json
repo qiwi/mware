@@ -16,7 +16,7 @@
     "test:unit": "BABEL_ENV=test NODE_ENV=test jest --no-cache -w 1 --detectOpenHandles --config jest.config.json",
     "test:report": "yarn test && yarn coveralls:push",
     "coveralls:push": "cat ./coverage/lcov.info | npm_config_yes=true npx coveralls || exit 0",
-    "lint": "node_modules/.bin/eslint 'packages/**/src/**/*.js' 'packages/**/test/**/*.js' --fix | snazzy",
+    "lint": "node_modules/.bin/eslint 'packages/**/src/**/*.js' 'packages/**/test/**/*.js' --fix | node_modules/.bin/snazzy",
     "docs": "docma -c ./docma.json",
     "docs:view": "node scripts/docsapp.js",
     "deps:upgrade": "npm_config_yes=true npx npm-upgrade-monorepo",
