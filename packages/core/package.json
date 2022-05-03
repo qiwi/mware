@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-core",
-  "version": "1.12.2",
+  "version": "1.13.0",
   "description": "Common middlewares core",
   "main": "target/es5/index.js",
   "files": [
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "devDependencies": {
-    "@qiwi/mware-infra": "*",
+    "@qiwi/mware-infra": "1.0.0",
     "flow-copy-source": "^2.0.9",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0"

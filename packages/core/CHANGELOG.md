@@ -1,3 +1,10 @@
+# @qiwi/mware-core [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-core@1.12.2...@qiwi/mware-core@1.13.0) (2022-05-03)
+
+
+### Features
+
+* tech release ([30096f2](https://github.com/qiwi/mware/commit/30096f294a85a599d1910b017c84b99803965f98))
+
 # [@qiwi/mware-core-v1.12.2](https://github.com/qiwi/mware/compare/v1.12.1...v1.12.2) (2021-11-13)
 
 
