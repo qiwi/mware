@@ -1,0 +1,61 @@
+{
+  "name": "@qiwi/mware-infra",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "mware infra package",
+  "keywords": [],
+  "files": [],
+  "scripts": {
+    "postupdate": "yarn",
+    "build": "exit 0",
+    "test": "exit 0",
+    "clean": "exit 0"
+  },
+  "bin": {
+    "buildstamp": "../../node_modules/.bin/buildstamp",
+    "flow": "../../node_modules/.bin/flow",
+    "flow-remove-types": "../../node_modules/.bin/flow-remove-types",
+    "flow-typed": "../../node_modules/.bin/flow-typed",
+    "gen-flow-files": "../../node_modules/.bin/gen-flow-files",
+    "jest": "../../node_modules/.bin/jest",
+    "snazzy": "../../node_modules/.bin/snazzy"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-flow": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "babel-jest": "^28.0.3",
+    "buildstamp": "^2.0.0",
+    "coveralls": "^3.1.1",
+    "docma": "^3.2.2",
+    "eslint": "^8.14.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "flow-bin": "^0.177.0",
+    "flow-coverage-report": "^0.8.0",
+    "flow-remove-types": "^2.177.0",
+    "flow-typed": "^3.7.0",
+    "gen-flow-files": "^0.5.0",
+    "jest": "^28.0.3",
+    "snazzy": "^9.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiwi/substrate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qiwi/substrate/issues"
+  }
+}

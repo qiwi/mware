@@ -1,8 +1,7 @@
 {
-  "name": "@qiwi/mware-crumbs",
+  "name": "@qiwi/mware-context",
   "version": "1.12.1",
-  "private": false,
-  "description": "XF* proxying middleware",
+  "description": "Cls-based contextify middleware",
   "main": "target/es5/index.js",
   "files": [
     "README.md",
@@ -13,14 +12,15 @@
     "build:es6": "flow-remove-types src/ --out-dir target/es6/",
     "build:es5": "BABEL_ENV=production babel src --out-dir target/es5/",
     "build:flow": "gen-flow-files ./src --out-dir ./target/es5",
-    "build": "rm -rf target && npm run build:es6 && npm run build:es5 && npm run build:flow"
+    "build": "rm -rf target && yarn build:es6 && yarn build:es5 && yarn build:flow"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/qiwi/mware.git"
   },
   "keywords": [
-    "common middlewares"
+    "mware",
+    "cls"
   ],
   "author": "Anton Golub <a.golub@qiwi.com>",
   "license": "MIT",
@@ -28,11 +28,9 @@
     "url": "https://github.com/qiwi/mware/issues"
   },
   "homepage": "https://github.com/qiwi/mware#readme",
-  "dependencies": {
-    "ip": "^1.1.5"
-  },
   "devDependencies": {
+    "@qiwi/mware-infra": "*",
     "lodash": "^4.17.21",
-    "reqresnext": "^1.6.4"
+    "reqresnext": "^1.7.0"
   }
 }

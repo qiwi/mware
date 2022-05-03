@@ -1,3 +1,5 @@
+// @flow
+
 import mdc from '@qiwi/mware-mdc'
 import logger from '@qiwi/mware-logger'
 import crumbs from '@qiwi/mware-crumbs'
