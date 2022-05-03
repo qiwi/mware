@@ -1,6 +1,7 @@
 {
+  "name": "@qiwi/mware-monorepo",
   "private": true,
-  "description": "Commmon express middlewares",
+  "description": "Common express middlewares",
   "workspaces": [
     "packages/*"
   ],

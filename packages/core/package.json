@@ -1,7 +1,7 @@
 {
   "name": "@qiwi/mware-core",
   "version": "1.12.2",
-  "description": "Commmon middlewares core",
+  "description": "Common middlewares core",
   "main": "target/es5/index.js",
   "files": [
     "README.md",

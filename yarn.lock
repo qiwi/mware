@@ -2578,6 +2578,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@qiwi/mware-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@qiwi/mware-monorepo@workspace:."
+  dependencies:
+    flow-bin: ^0.177.0
+  languageName: unknown
+  linkType: soft
+
 "@qiwi/mware-validator@^1.12.3, @qiwi/mware-validator@workspace:packages/validator":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-validator@workspace:packages/validator"
@@ -10709,14 +10717,6 @@ __metadata:
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    flow-bin: ^0.177.0
-  languageName: unknown
-  linkType: soft
 
 "run-async@npm:^2.2.0, run-async@npm:^2.4.0":
   version: 2.4.1
