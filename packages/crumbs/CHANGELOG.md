@@ -1,3 +1,10 @@
+## @qiwi/mware-crumbs [1.13.1](https://github.com/qiwi/mware/compare/@qiwi/mware-crumbs@1.13.0...@qiwi/mware-crumbs@1.13.1) (2022-05-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ip to v2 ([062033b](https://github.com/qiwi/mware/commit/062033bb102b1c88948103d73e6d363a85609055))
+
 # @qiwi/mware-crumbs [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-crumbs@1.12.1...@qiwi/mware-crumbs@1.13.0) (2022-05-03)
 
 

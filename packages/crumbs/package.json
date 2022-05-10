@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-crumbs",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "description": "XF* proxying middleware",
   "main": "target/es5/index.js",
   "files": [
