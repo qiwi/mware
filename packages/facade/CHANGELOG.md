@@ -1,3 +1,13 @@
+## @qiwi/mware [1.13.1](https://github.com/qiwi/mware/compare/@qiwi/mware@1.13.0...@qiwi/mware@1.13.1) (2022-05-10)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/mware-crumbs:** upgraded to 1.13.1
+
 # @qiwi/mware [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware@1.12.3...@qiwi/mware@1.13.0) (2022-05-03)
 
 

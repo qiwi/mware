@@ -2004,16 +2004,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-crumbs@npm:1.13.0":
-  version: 1.13.0
-  resolution: "@qiwi/mware-crumbs@npm:1.13.0"
-  dependencies:
-    ip: ^1.1.5
-  checksum: 813e3aad66d5d98097ee890b65476ea3e93a016d50b87fe1060b370522152373e0bafbde2b4ec024385fdf9bcc466addbd5a2175861432824ec019671439c0f8
-  languageName: node
-  linkType: hard
-
-"@qiwi/mware-crumbs@workspace:packages/crumbs":
+"@qiwi/mware-crumbs@1.13.1, @qiwi/mware-crumbs@workspace:packages/crumbs":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-crumbs@workspace:packages/crumbs"
   dependencies:
@@ -2118,7 +2109,7 @@ __metadata:
   dependencies:
     "@qiwi/mware-core": 1.13.0
     "@qiwi/mware-cors": 1.12.0
-    "@qiwi/mware-crumbs": 1.13.0
+    "@qiwi/mware-crumbs": 1.13.1
     "@qiwi/mware-infra": 1.0.0
     "@qiwi/mware-logger": 1.13.0
     "@qiwi/mware-mdc": 1.13.0
