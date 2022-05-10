@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "ip": "^1.1.5"
+    "ip": "^2.0.0"
   },
   "devDependencies": {
     "@qiwi/mware-infra": "1.0.0",
