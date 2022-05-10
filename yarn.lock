@@ -2009,7 +2009,7 @@ __metadata:
   resolution: "@qiwi/mware-crumbs@workspace:packages/crumbs"
   dependencies:
     "@qiwi/mware-infra": 1.0.0
-    ip: ^1.1.5
+    ip: ^2.0.0
     lodash: ^4.17.21
     reqresnext: ^1.7.0
   languageName: unknown
@@ -5864,6 +5864,13 @@ __metadata:
   version: 1.1.5
   resolution: "ip@npm:1.1.5"
   checksum: 30133981f082a060a32644f6a7746e9ba7ac9e2bc07ecc8bbdda3ee8ca9bec1190724c390e45a1ee7695e7edfd2a8f7dda2c104ec5f7ac5068c00648504c7e5a
+  languageName: node
+  linkType: hard
+
+"ip@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "ip@npm:2.0.0"
+  checksum: cfcfac6b873b701996d71ec82a7dd27ba92450afdb421e356f44044ed688df04567344c36cbacea7d01b1c39a4c732dc012570ebe9bebfb06f27314bca625349
   languageName: node
   linkType: hard
 
