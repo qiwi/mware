@@ -33,7 +33,7 @@
   ],
   "author": "Anton Golub <a.golub@qiwi.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "dependencies": {
     "flow-bin": "^0.178.0"
   }
