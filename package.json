@@ -35,6 +35,6 @@
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
   "dependencies": {
-    "flow-bin": "^0.180.0"
+    "flow-bin": "^0.181.0"
   }
 }
