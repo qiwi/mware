@@ -2150,7 +2150,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-logger@1.13.0, @qiwi/mware-logger@workspace:packages/logger":
+"@qiwi/mware-logger@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@qiwi/mware-logger@npm:1.13.0"
+  dependencies:
+    http-status-codes: ^2.2.0
+  checksum: f7cdb3e47342f034de98d8db1fb74322dd2933930fa36a687d26e835f35e465325392a9564c7ad286e5a4e1c4ace2575430e88d0e2962a023b5ed38e0c15c268
+  languageName: node
+  linkType: hard
+
+"@qiwi/mware-logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-logger@workspace:packages/logger"
   dependencies:
