@@ -16,7 +16,7 @@ export const XFF = X_FORWARDED_FOR;
 export const XFH = X_FORWARDED_HOST
 export const SEPARATOR = ', '
 
-export default (() => {
+export const crumbs = (() => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     const xfh = req.get(XFH) || req.get(HOST)
     const xff = req.get(XFF) || req.connection.remoteAddress
@@ -32,3 +32,5 @@ export default (() => {
     next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default crumbs

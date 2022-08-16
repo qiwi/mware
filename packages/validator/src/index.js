@@ -35,7 +35,7 @@ const getAjv = (opts = {}) => {
   return ajvStack[key]
 }
 
-export default ((opts?: IOpts) => {
+export const validator = ((opts?: IOpts) => {
   const {schema, scheme, opts: ajvOpts} = opts || DEFAULT_SCHEMA
   const ajv = getAjv(ajvOpts)
 
@@ -54,3 +54,5 @@ export default ((opts?: IOpts) => {
     next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default validator

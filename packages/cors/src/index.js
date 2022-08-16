@@ -49,7 +49,7 @@ export type IOpts = {
   [headers]: ?string
 }
 
-export default ((opts: ?IOpts) => {
+export const cors = ((opts: ?IOpts) => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     const allowOrigin = formatOriginHeader(opts && opts[ALLOW_ORIGIN], req.get('origin'))
     const corsHeaders: {[key: string]: string} = {
@@ -63,3 +63,5 @@ export default ((opts: ?IOpts) => {
     next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default cors

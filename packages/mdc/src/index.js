@@ -12,7 +12,7 @@ import {setContextValue, getContext} from '@qiwi/mware-context'
 
 export const TRACE_KEY = 'trace'
 
-export default (() => {
+export const mdc = (() => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     if (req.trace) {
       next()
@@ -48,3 +48,5 @@ export default (() => {
     next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default mdc

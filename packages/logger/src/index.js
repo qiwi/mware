@@ -46,7 +46,7 @@ export type ILoggerMiddlewareOpts = IMiddlewareOpts & {
   resTemplate?: string
 }
 
-export default ((opts?: ILoggerMiddlewareOpts) => {
+export const logger = ((opts?: ILoggerMiddlewareOpts) => {
   const logger = opts && opts.logger || DEFAULT_LOGGER
   const reqTemplate = opts && opts.reqTemplate || REQUEST_TEMPLATE
   const resTemplate = opts && opts.resTemplate || RESPONSE_TEMPLATE
@@ -134,3 +134,5 @@ export default ((opts?: ILoggerMiddlewareOpts) => {
     next()
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default logger

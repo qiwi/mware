@@ -39,7 +39,7 @@ export type IOpts = {
   ns?: string | INamespace
 }
 
-export default ((opts: ?IOpts) => {
+export const context = ((opts: ?IOpts) => {
   const cxt: INamespace = getContext(opts && opts.ns)
   return ((req: IRequest, res: IResponse, next: INext) => {
     cxt.bindEmitter(req)
@@ -48,3 +48,5 @@ export default ((opts: ?IOpts) => {
     return cxt.run(() => next())
   }: IRegularMiddleware)
 }: IMiddlewareFactory)
+
+export default context
