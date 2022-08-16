@@ -1,3 +1,10 @@
+# @qiwi/mware-context [1.14.0](https://github.com/qiwi/mware/compare/@qiwi/mware-context@1.13.0...@qiwi/mware-context@1.14.0) (2022-08-16)
+
+
+### Features
+
+* add named exports ([a664f1a](https://github.com/qiwi/mware/commit/a664f1a128541893d9107dd23965b65318e043dc))
+
 # @qiwi/mware-context [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-context@1.12.1...@qiwi/mware-context@1.13.0) (2022-05-03)
 
 

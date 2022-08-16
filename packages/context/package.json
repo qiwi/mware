@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-context",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "description": "Cls-based contextify middleware",
   "main": "target/es5/index.js",
   "files": [
