@@ -2088,7 +2088,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-crumbs@1.13.1, @qiwi/mware-crumbs@workspace:packages/crumbs":
+"@qiwi/mware-crumbs@npm:1.13.1":
+  version: 1.13.1
+  resolution: "@qiwi/mware-crumbs@npm:1.13.1"
+  dependencies:
+    ip: ^2.0.0
+  checksum: d971ad2ef54410903850c6beda746bb0f9185cca44048c2dd5433b06c7f9a974981309fa2af1b6d34d9525e46dfe9e48d22becb8d8171d9c34a4661e0e250067
+  languageName: node
+  linkType: hard
+
+"@qiwi/mware-crumbs@workspace:packages/crumbs":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-crumbs@workspace:packages/crumbs"
   dependencies:
