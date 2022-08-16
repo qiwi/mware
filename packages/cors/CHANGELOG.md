@@ -1,3 +1,10 @@
+# @qiwi/mware-cors [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-cors@1.12.0...@qiwi/mware-cors@1.13.0) (2022-08-16)
+
+
+### Features
+
+* add named exports ([a664f1a](https://github.com/qiwi/mware/commit/a664f1a128541893d9107dd23965b65318e043dc))
+
 # @qiwi/mware-cors [1.12.0](https://github.com/qiwi/mware/compare/@qiwi/mware-cors@1.11.2...@qiwi/mware-cors@1.12.0) (2022-05-03)
 
 
