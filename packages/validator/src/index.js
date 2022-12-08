@@ -23,8 +23,8 @@ export const DEFAULT_SCHEMA: IOpts = {
   opts: {}
 }
 
-const ajvStack = {}
-const getAjv = (opts: IOpts = {}) => {
+const ajvStack: {[string]: typeof Ajv} = {}
+const getAjv = (opts: IAnyObject = {}) => {
   const key = JSON.stringify(opts)
 
   if (!ajvStack[key]) {
@@ -36,7 +36,7 @@ const getAjv = (opts: IOpts = {}) => {
 }
 
 export const validator = ((opts?: IOpts) => {
-  const {schema, scheme, opts: ajvOpts} = opts || DEFAULT_SCHEMA
+  const {schema, scheme, opts: ajvOpts = {}} = opts || DEFAULT_SCHEMA
   const ajv = getAjv(ajvOpts)
 
   return ((req: IRequest, res: IResponse, next: INext) => {
