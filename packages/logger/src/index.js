@@ -29,11 +29,10 @@ export const DEFAULT_LOGGER = console // TODO inherit from core
 export const REQUEST_TEMPLATE = 'REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip} contentLength=${contentLength}'
 export const RESPONSE_TEMPLATE = 'RES ${id} < status=${status} duration=${duration}ms contentLength=${contentLength}'
 
-export function interpolate(params: {[key: string]: IAny}): string {
+export function interpolate(this: any, params: {[key: string]: IAny}): string {
   const names: string[] = Object.keys(params)
   const vals: IAny[] = Object.values(params)
 
-  // $FlowFixMe
   return new Function(...names, `return \`${this}\`;`)(...vals)
 }
 

@@ -24,7 +24,7 @@ export const DEFAULT_SCHEMA: IOpts = {
 }
 
 const ajvStack = {}
-const getAjv = (opts = {}) => {
+const getAjv = (opts: IOpts = {}) => {
   const key = JSON.stringify(opts)
 
   if (!ajvStack[key]) {
