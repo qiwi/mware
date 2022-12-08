@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-logger",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "reqres logging middleware",
   "main": "target/es5/index.js",
   "files": [
