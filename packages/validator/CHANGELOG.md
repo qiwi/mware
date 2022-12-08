@@ -1,3 +1,10 @@
+## @qiwi/mware-validator [1.14.1](https://github.com/qiwi/mware/compare/@qiwi/mware-validator@1.14.0...@qiwi/mware-validator@1.14.1) (2022-12-08)
+
+
+### Bug Fixes
+
+* type fixes ([610d7b7](https://github.com/qiwi/mware/commit/610d7b79eb5c267de86b8cc223449a04fcfc6112))
+
 # @qiwi/mware-validator [1.14.0](https://github.com/qiwi/mware/compare/@qiwi/mware-validator@1.13.0...@qiwi/mware-validator@1.14.0) (2022-08-16)
 
 
