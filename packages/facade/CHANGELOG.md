@@ -1,3 +1,14 @@
+## @qiwi/mware [1.14.1](https://github.com/qiwi/mware/compare/@qiwi/mware@1.14.0...@qiwi/mware@1.14.1) (2022-12-08)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/mware-logger:** upgraded to 1.14.1
+* **@qiwi/mware-validator:** upgraded to 1.14.1
+
 # @qiwi/mware [1.14.0](https://github.com/qiwi/mware/compare/@qiwi/mware@1.13.1...@qiwi/mware@1.14.0) (2022-08-16)
 
 
