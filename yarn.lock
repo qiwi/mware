@@ -2112,7 +2112,7 @@ __metadata:
     coveralls: ^3.1.1
     eslint: ^8.29.0
     eslint-plugin-flowtype: ^8.0.3
-    flow-bin: ^0.195.0
+    flow-bin: ^0.196.0
     flow-coverage-report: ^0.8.0
     flow-remove-types: ^2.194.0
     flow-typed: ^3.8.0
@@ -2160,7 +2160,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-monorepo@workspace:."
   dependencies:
-    flow-bin: ^0.195.0
+    flow-bin: ^0.196.0
   languageName: unknown
   linkType: soft
 
@@ -4999,12 +4999,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:^0.195.0":
-  version: 0.195.0
-  resolution: "flow-bin@npm:0.195.0"
+"flow-bin@npm:^0.196.0":
+  version: 0.196.0
+  resolution: "flow-bin@npm:0.196.0"
   bin:
     flow: cli.js
-  checksum: a5eb7a959ceca63e2687ae59dd34ab7190917a6c556f086b02f9bfdeb3d8ba3b6eec49b6c1eb57870b4911665409dbfb9b1eff52b7711de08f682acf86b881a5
+  checksum: a0e34cd6979897c0b0e238a7dcb45a1662de859cd598a58e586e006534ab27c7c366643e8fb8d51348b598b9f543c6e856b002888da92580454380c3524c35ad
   languageName: node
   linkType: hard
 
