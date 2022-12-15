@@ -2112,9 +2112,9 @@ __metadata:
     coveralls: ^3.1.1
     eslint: ^8.29.0
     eslint-plugin-flowtype: ^8.0.3
-    flow-bin: ^0.195.0
+    flow-bin: ^0.196.0
     flow-coverage-report: ^0.8.0
-    flow-remove-types: ^2.194.0
+    flow-remove-types: ^2.196.0
     flow-typed: ^3.8.0
     gen-flow-files: ^0.5.0
     jest: ^29.3.1
@@ -2160,7 +2160,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-monorepo@workspace:."
   dependencies:
-    flow-bin: ^0.195.0
+    flow-bin: ^0.196.0
   languageName: unknown
   linkType: soft
 
@@ -4999,12 +4999,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:^0.195.0":
-  version: 0.195.0
-  resolution: "flow-bin@npm:0.195.0"
+"flow-bin@npm:^0.196.0":
+  version: 0.196.0
+  resolution: "flow-bin@npm:0.196.0"
   bin:
     flow: cli.js
-  checksum: a5eb7a959ceca63e2687ae59dd34ab7190917a6c556f086b02f9bfdeb3d8ba3b6eec49b6c1eb57870b4911665409dbfb9b1eff52b7711de08f682acf86b881a5
+  checksum: a0e34cd6979897c0b0e238a7dcb45a1662de859cd598a58e586e006534ab27c7c366643e8fb8d51348b598b9f543c6e856b002888da92580454380c3524c35ad
   languageName: node
   linkType: hard
 
@@ -5047,24 +5047,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-parser@npm:^0.194.0":
-  version: 0.194.0
-  resolution: "flow-parser@npm:0.194.0"
-  checksum: 8ccd1eca37b6b423d8e24db9b0079c364661d99d69dc4ae1a330437a0f2daeb928ec9fca059413d36274f536f8716343893b6764d40ebb29372e2f2cd17a703b
+"flow-parser@npm:^0.196.0":
+  version: 0.196.0
+  resolution: "flow-parser@npm:0.196.0"
+  checksum: f6b3c6918a5b48d0943be2026242b5bd75458e0f1bed076e800e6340998e0a8d2a7cc3a9a48810bae6b299c1b24ef1c94fd7cab6405f26801317abecbd8b9a7a
   languageName: node
   linkType: hard
 
-"flow-remove-types@npm:^2.194.0":
-  version: 2.194.0
-  resolution: "flow-remove-types@npm:2.194.0"
+"flow-remove-types@npm:^2.196.0":
+  version: 2.196.0
+  resolution: "flow-remove-types@npm:2.196.0"
   dependencies:
-    flow-parser: ^0.194.0
+    flow-parser: ^0.196.0
     pirates: ^3.0.2
     vlq: ^0.2.1
   bin:
     flow-node: flow-node
     flow-remove-types: flow-remove-types
-  checksum: 70b67eafdc78d71b228fec248419ee63b2df9379de6a33c95edc6827b2dfd518cb8376052403bcb3a31474ba26a8696987d2fc357240d0776461198d99f72188
+  checksum: 0ddcd35e89c8601c0285586ffabc164e7cec7128bfb97d8e364734c6ef7c2d0e2ad8f3776a97b78a238fc779943770eb1237d3e458dcb380f1baac6df57d2634
   languageName: node
   linkType: hard
 
