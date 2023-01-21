@@ -43,7 +43,7 @@
     "coveralls": "^3.1.1",
     "eslint": "^8.29.0",
     "eslint-plugin-flowtype": "^8.0.3",
-    "flow-bin": "^0.197.0",
+    "flow-bin": "^0.198.0",
     "flow-coverage-report": "^0.8.0",
     "flow-remove-types": "^2.196.0",
     "flow-typed": "^3.8.0",
