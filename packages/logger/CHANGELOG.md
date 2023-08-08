@@ -1,3 +1,10 @@
+# @qiwi/mware-logger [1.15.0](https://github.com/qiwi/mware/compare/@qiwi/mware-logger@1.14.1...@qiwi/mware-logger@1.15.0) (2023-08-08)
+
+
+### Features
+
+* **logger:** change logger response template ([3fc4fe4](https://github.com/qiwi/mware/commit/3fc4fe441fe4fa79f0eb69a3d757feb56315d793))
+
 ## @qiwi/mware-logger [1.14.1](https://github.com/qiwi/mware/compare/@qiwi/mware-logger@1.14.0...@qiwi/mware-logger@1.14.1) (2022-12-08)
 
 
