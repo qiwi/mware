@@ -66,7 +66,10 @@ describe('mware-logger', () => {
 
     it('#write + #end', done => {
       const { req, res, next } = reqresnext(
-        null,
+        {
+          url: 'http://example.com/foo/bar',
+          method: 'GET',
+        },
         null,
         jest.fn()
       )
@@ -74,7 +77,7 @@ describe('mware-logger', () => {
       mware(req, res, next)
 
       res.on('finish', () => {
-        expect(error).toHaveBeenCalledWith(expect.stringMatching(/^RES .{16} < status=503 duration=.+$/))
+        expect(error).toHaveBeenCalledWith(expect.stringMatching(/^RES .{16} method=GET target=http:\/\/example.com\/foo\/bar < status=503 duration=.+$/))
         done()
       })
       res.status(503)

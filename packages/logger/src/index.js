@@ -27,7 +27,7 @@ export const getLogLevelByStatus = (status: number): string => {
 
 export const DEFAULT_LOGGER = console // TODO inherit from core
 export const REQUEST_TEMPLATE = 'REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip} contentLength=${contentLength}'
-export const RESPONSE_TEMPLATE = 'RES ${id} < status=${status} duration=${duration}ms contentLength=${contentLength}'
+export const RESPONSE_TEMPLATE = 'RES ${id} method=${method} target=${target} < status=${status} duration=${duration}ms contentLength=${contentLength}'
 
 export function interpolate(this: any, params: {[key: string]: IAny}): Function {
   const names: string[] = Object.keys(params)
@@ -57,6 +57,7 @@ export const logger = ((opts?: ILoggerMiddlewareOpts) => {
     const origin = req.get('origin')
     const id = req.id || res.get('x-b3-spanid') || crypto.randomBytes(8).toString('hex')
     const target = req.url
+    const method = req.method
 
     const _write = res.write
     const _end = res.end
@@ -80,7 +81,7 @@ export const logger = ((opts?: ILoggerMiddlewareOpts) => {
           ip: req.ip,
           target,
           origin,
-          method: req.method,
+          method,
           headers: JSON.stringify(req.headers),
           contentLength: requestContentLength
         }
@@ -124,6 +125,8 @@ export const logger = ((opts?: ILoggerMiddlewareOpts) => {
         resTemplate,
         {
           id,
+          target,
+          method,
           status,
           duration: Date.now() - start,
           headers: JSON.stringify(res.header()._headers),
