@@ -2228,16 +2228,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-logger@npm:1.14.1":
-  version: 1.14.1
-  resolution: "@qiwi/mware-logger@npm:1.14.1"
-  dependencies:
-    http-status-codes: ^2.2.0
-  checksum: 951edefecdc6b74e520eb2387cbc58b53275cb0ab0d1f32fbe618a7183179ef3a8bb462f677652dad6a31561fb1cc66cd72d5dc3758a7fefb4ece02e0eb86d7a
-  languageName: node
-  linkType: hard
-
-"@qiwi/mware-logger@workspace:packages/logger":
+"@qiwi/mware-logger@1.15.0, @qiwi/mware-logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-logger@workspace:packages/logger"
   dependencies:
@@ -2291,7 +2282,7 @@ __metadata:
     "@qiwi/mware-cors": 1.13.0
     "@qiwi/mware-crumbs": 1.14.0
     "@qiwi/mware-infra": 1.0.0
-    "@qiwi/mware-logger": 1.14.1
+    "@qiwi/mware-logger": 1.15.0
     "@qiwi/mware-mdc": 1.14.0
     "@qiwi/mware-validator": 1.14.1
     lodash: ^4.17.21

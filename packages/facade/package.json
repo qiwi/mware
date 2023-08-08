@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware",
-  "version": "1.14.1",
+  "version": "1.14.2",
   "description": "Commmon middlewares collection",
   "main": "target/es5/index.js",
   "files": [
@@ -32,7 +32,7 @@
     "@qiwi/mware-cors": "1.13.0",
     "@qiwi/mware-crumbs": "1.14.0",
     "@qiwi/mware-infra": "1.0.0",
-    "@qiwi/mware-logger": "1.14.1",
+    "@qiwi/mware-logger": "1.15.0",
     "@qiwi/mware-mdc": "1.14.0",
     "@qiwi/mware-validator": "1.14.1"
   },
