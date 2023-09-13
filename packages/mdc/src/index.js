@@ -11,7 +11,12 @@ import type {
 import {setContextValue, getContext} from '@qiwi/mware-context'
 
 export const TRACE_KEY = 'trace'
-
+/**
+ * Middleware for MDC headers processing
+ *
+ * Set **X-B3-TraceId**, **X-B3-SpanId** and **X-B3-ParentSpanId** header in response
+ * @type {IMiddlewareFactory}
+ */
 export const mdc = (() => {
   return ((req: IRequest, res: IResponse, next: INext) => {
     if (req.trace) {
