@@ -39,6 +39,10 @@ export type IOpts = {
   ns?: string | INamespace
 }
 
+/**
+ * Middleware to attach CLS-based context to current request.
+ * @type {IMiddlewareFactory}
+ */
 export const context = ((opts: ?IOpts) => {
   const cxt: INamespace = getContext(opts && opts.ns)
   return ((req: IRequest, res: IResponse, next: INext) => {

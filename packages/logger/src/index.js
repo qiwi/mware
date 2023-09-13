@@ -47,6 +47,18 @@ export type ILoggerMiddlewareOpts = IMiddlewareOpts & {
   resTemplate?: string
 }
 
+/**
+ * Request/response logger middleware
+ *
+ * **default reqTemplate:**
+ *
+ * REQ ${id} > method=${method} target=${target} origin=${origin} ip=${ip} contentLength=${contentLength}
+ *
+ * **default resTemplate:**
+ *
+ * RES ${id} method=${method} target=${target} < status=${status} duration=${duration}ms contentLength=${contentLength}
+ * @type {IMiddlewareFactory}
+ */
 export const logger = ((opts?: ILoggerMiddlewareOpts) => {
   const logger = opts && opts.logger || DEFAULT_LOGGER
   const reqTemplate = opts && opts.reqTemplate || REQUEST_TEMPLATE

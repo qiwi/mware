@@ -18,7 +18,7 @@ app.use(logger())
 
 app.get('/foo/bar', (req, res) => res.status(503).send('foobar'))
 // REQ 1f2146c00726d6f3 > method=GET target=/foo/bar origin=example.com ip=10.10.10.10 headers={\"origin\":\"example.com\",\"host\":null}
-// RES ccb0fa3f9c8f5afc < status=503 duration=1ms headers={} bufferLength=6
+// RES ccb0fa3f9c8f5afc method=GET target=/foo/bar < status=503 duration=1ms headers={} bufferLength=6
 
 app.listen(...)
 ```

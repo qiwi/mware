@@ -35,6 +35,10 @@ const getAjv = (opts: IAnyObject = {}) => {
   return ajvStack[key]
 }
 
+/**
+ * JSON-schema based validator middleware
+ * @type {IMiddlewareFactory}
+ */
 export const validator = ((opts?: IOpts) => {
   const {schema, scheme, opts: ajvOpts = {}} = opts || DEFAULT_SCHEMA
   const ajv = getAjv(ajvOpts)
