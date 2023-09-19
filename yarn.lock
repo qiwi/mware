@@ -2161,11 +2161,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-core@1.13.0, @qiwi/mware-core@workspace:packages/core":
+"@qiwi/mware-core@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@qiwi/mware-core@npm:1.13.0"
+  checksum: a1c3ab8a507db753e1be92492e4abe09e97e12149a77784c47685c82b907c4d7871c9c11bb272fc5873e7c3cf4099efe07b6c399ed393c794a62540d90a4b300
+  languageName: node
+  linkType: hard
+
+"@qiwi/mware-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-core@workspace:packages/core"
   dependencies:
-    "@qiwi/mware-infra": 1.0.0
+    "@qiwi/mware-infra": 1.1.0
     flow-copy-source: ^2.0.9
     lodash: ^4.17.21
     reqresnext: ^1.7.0
