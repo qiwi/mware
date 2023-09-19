@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-mdc",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "MDC middleware",
   "main": "target/es5/index.js",
   "files": [
@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/qiwi/mware#readme",
   "dependencies": {
-    "@qiwi/mware-context": "1.14.0",
+    "@qiwi/mware-context": "1.14.1",
     "cls-hooked": "^4.2.2"
   },
   "devDependencies": {
-    "@qiwi/mware-infra": "1.0.0",
+    "@qiwi/mware-infra": "1.1.0",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0"
   }

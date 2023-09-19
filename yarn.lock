@@ -2144,14 +2144,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/mware-context@npm:1.14.0":
-  version: 1.14.0
-  resolution: "@qiwi/mware-context@npm:1.14.0"
-  checksum: cbf38873dd012113a9fe60e9950bb6df54cbf6e11efec74d1e26f44f6d0cd5b76ef1c961fe3ca0bf81ee6d370afd050e659adb169d11fe9fb8e3d9e92cdcf415
-  languageName: node
-  linkType: hard
-
-"@qiwi/mware-context@workspace:packages/context":
+"@qiwi/mware-context@1.14.1, @qiwi/mware-context@workspace:packages/context":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-context@workspace:packages/context"
   dependencies:
@@ -2160,6 +2153,13 @@ __metadata:
     reqresnext: ^1.7.0
   languageName: unknown
   linkType: soft
+
+"@qiwi/mware-context@npm:1.14.0":
+  version: 1.14.0
+  resolution: "@qiwi/mware-context@npm:1.14.0"
+  checksum: cbf38873dd012113a9fe60e9950bb6df54cbf6e11efec74d1e26f44f6d0cd5b76ef1c961fe3ca0bf81ee6d370afd050e659adb169d11fe9fb8e3d9e92cdcf415
+  languageName: node
+  linkType: hard
 
 "@qiwi/mware-core@npm:1.13.0":
   version: 1.13.0
@@ -2298,12 +2298,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-mdc@1.14.0, @qiwi/mware-mdc@workspace:packages/mdc":
+"@qiwi/mware-mdc@npm:1.14.0":
+  version: 1.14.0
+  resolution: "@qiwi/mware-mdc@npm:1.14.0"
+  dependencies:
+    "@qiwi/mware-context": 1.14.0
+    cls-hooked: ^4.2.2
+  checksum: 42ae77d5cd1739b18d8c5504f73969d1489824c2914017c9f89ee7e29c826d063cae28fa30772f8d4f7d5eb27415e44ab00a59b038e2d614482d03eadc065ed9
+  languageName: node
+  linkType: hard
+
+"@qiwi/mware-mdc@workspace:packages/mdc":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-mdc@workspace:packages/mdc"
   dependencies:
-    "@qiwi/mware-context": 1.14.0
-    "@qiwi/mware-infra": 1.0.0
+    "@qiwi/mware-context": 1.14.1
+    "@qiwi/mware-infra": 1.1.0
     cls-hooked: ^4.2.2
     lodash: ^4.17.21
     reqresnext: ^1.7.0
