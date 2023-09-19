@@ -1,3 +1,13 @@
+## @qiwi/mware-context [1.14.1](https://github.com/qiwi/mware/compare/@qiwi/mware-context@1.14.0...@qiwi/mware-context@1.14.1) (2023-09-19)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/mware-infra:** upgraded to 1.1.0
+
 # @qiwi/mware-context [1.14.0](https://github.com/qiwi/mware/compare/@qiwi/mware-context@1.13.0...@qiwi/mware-context@1.14.0) (2022-08-16)
 
 
