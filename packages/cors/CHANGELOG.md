@@ -1,3 +1,13 @@
+## @qiwi/mware-cors [1.13.1](https://github.com/qiwi/mware/compare/@qiwi/mware-cors@1.13.0...@qiwi/mware-cors@1.13.1) (2023-09-19)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/mware-infra:** upgraded to 1.1.0
+
 # @qiwi/mware-cors [1.13.0](https://github.com/qiwi/mware/compare/@qiwi/mware-cors@1.12.0...@qiwi/mware-cors@1.13.0) (2022-08-16)
 
 

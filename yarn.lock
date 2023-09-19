@@ -2179,11 +2179,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/mware-cors@1.13.0, @qiwi/mware-cors@workspace:packages/cors":
+"@qiwi/mware-cors@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@qiwi/mware-cors@npm:1.13.0"
+  dependencies:
+    lodash: ^4.17.21
+  checksum: 4b9690022c243dc03d78f33c69593267e33cfc37ca0ca3e4c72c1b8ff634ba768fe0f5a8783cfc2bf1f30ccf206a53115b95c4f05f7433f861f85087f788fd9c
+  languageName: node
+  linkType: hard
+
+"@qiwi/mware-cors@workspace:packages/cors":
   version: 0.0.0-use.local
   resolution: "@qiwi/mware-cors@workspace:packages/cors"
   dependencies:
-    "@qiwi/mware-infra": 1.0.0
+    "@qiwi/mware-infra": 1.1.0
     lodash: ^4.17.21
     reqresnext: ^1.7.0
   languageName: unknown

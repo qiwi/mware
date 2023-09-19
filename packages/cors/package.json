@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-cors",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "description": "CORS middleware",
   "main": "target/es5/index.js",
   "files": [
@@ -31,7 +31,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@qiwi/mware-infra": "1.0.0",
+    "@qiwi/mware-infra": "1.1.0",
     "reqresnext": "^1.7.0"
   }
 }
