@@ -1,3 +1,10 @@
+# @qiwi/mware-infra [1.1.0](https://github.com/qiwi/mware/compare/@qiwi/mware-infra@1.0.0...@qiwi/mware-infra@1.1.0) (2023-09-19)
+
+
+### Features
+
+* up deps ([23a4bba](https://github.com/qiwi/mware/commit/23a4bbaf73ca5ca8d44997e11b54831cca02d326))
+
 # @qiwi/mware-infra 1.0.0 (2022-05-03)
 
 
