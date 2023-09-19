@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-validator",
-  "version": "1.14.1",
+  "version": "1.15.0",
   "description": "JSON-schema based validator middleware",
   "main": "target/es5/index.js",
   "files": [
@@ -33,7 +33,7 @@
     "http-status-codes": "^2.2.0"
   },
   "devDependencies": {
-    "@qiwi/mware-infra": "1.0.0",
+    "@qiwi/mware-infra": "1.1.0",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0"
   }
