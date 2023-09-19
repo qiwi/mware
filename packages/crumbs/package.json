@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/mware-crumbs",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "XF* proxying middleware",
   "main": "target/es5/index.js",
   "files": [
@@ -31,7 +31,7 @@
     "ip": "^2.0.0"
   },
   "devDependencies": {
-    "@qiwi/mware-infra": "1.0.0",
+    "@qiwi/mware-infra": "1.1.0",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0"
   }
