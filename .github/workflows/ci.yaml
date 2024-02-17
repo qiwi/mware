@@ -48,7 +48,7 @@ jobs:
         run: yarn build
 
       - name: Save target (artifact)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: target
           retention-days: 1
@@ -69,7 +69,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: Restore target
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: target
       - uses: actions/setup-node@v4
@@ -85,7 +85,7 @@ jobs:
 
       - name: Push coverage
         if: github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: target
           retention-days: 1
@@ -105,7 +105,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: Restore target
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: target
       - uses: actions/setup-node@v4
@@ -134,7 +134,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Restore target
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: target
       - uses: actions/setup-node@v4
