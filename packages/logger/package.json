@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@qiwi/mware-infra": "1.1.0",
-    "express": "4.18.3",
+    "express": "4.19.1",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0",
     "supertest": "6.3.4"
