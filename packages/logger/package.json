@@ -35,6 +35,6 @@
     "express": "4.21.2",
     "lodash": "^4.17.21",
     "reqresnext": "^1.7.0",
-    "supertest": "7.0.0"
+    "supertest": "7.1.0"
   }
 }
