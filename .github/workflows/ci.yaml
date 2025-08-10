@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
       - name: Install deps
         run: yarn
       - name: Lint
@@ -40,7 +40,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
       - name: Install deps
         run: yarn
 
@@ -74,7 +74,7 @@ jobs:
           name: target
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
       - name: Install deps
         run: |
           sudo apt-get install moreutils
@@ -139,7 +139,7 @@ jobs:
           name: target
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Codeclimate
         uses: paambaati/codeclimate-action@v9.0.0
