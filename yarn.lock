@@ -2629,7 +2629,7 @@ __metadata:
     http-status-codes: ^2.2.0
     lodash: ^4.17.21
     reqresnext: ^1.7.0
-    supertest: 7.2.2
+    supertest: 7.3.0
   languageName: unknown
   linkType: soft
 
@@ -10920,14 +10920,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supertest@npm:7.2.2":
-  version: 7.2.2
-  resolution: "supertest@npm:7.2.2"
+"supertest@npm:7.3.0":
+  version: 7.3.0
+  resolution: "supertest@npm:7.3.0"
   dependencies:
     cookie-signature: ^1.2.2
     methods: ^1.1.2
     superagent: ^10.3.0
-  checksum: daf7be09df5091a0f5aec5c52780aa64bc3d2cc0b5e14aee079dbe6c6e7a8896f630591a48fd714f247d3688eb7b3d8e16af5ed2093c78722296bb93df1ef565
+  checksum: 19ca2d4445c92dc0a4028c189bfe273522617f1fd2099b848448e61aa3db95718652695798420b306a9c25eee8eefd6968f7dec38dda80fff300aa46773b9c41
   languageName: node
   linkType: hard
 
